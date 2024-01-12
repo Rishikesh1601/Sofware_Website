@@ -1,0 +1,78 @@
+.featured-item {
+    padding: 40px 30px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 9;
+    background: var(--themeht-white-color);
+    box-shadow: 0 10px 35px 0 rgba(92.99999999999996, 72.00000000000001, 223, .08);
+}
+.featured-item .featured-icon {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.featured-item.style-3 .featured-icon i {
+    -webkit-text-fill-color: inherit;
+    border-radius: 50%;
+    background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
+    color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    background-size: 150% 100%;
+    -webkit-transition: all .3s cubic-bezier(.02, .54, .58, 1);
+    -o-transition: all .3s cubic-bezier(.02, .54, .58, 1);
+    transition: all .3s cubic-bezier(.02, .54, .58, 1);
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.featured-item .featured-icon i {
+    display: inline-block;
+}
+.featured-item.style-3 .featured-icon i:hover{
+    border-radius:12%;
+}
+/* Add this to your stylesheet */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  .arrow.prev {
+    left: 0;
+}
+  
+  .arrow.next {
+    right: 0;
+
+}
+
+.z-index-1 {
+    z-index: 1;
+    position: relative;
+}
+.theme-title h6 {
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+}
+  
