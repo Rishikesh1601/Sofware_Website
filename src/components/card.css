@@ -10,9 +10,9 @@
 .featured-item .featured-icon {
     display: inline-block;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
-.featured-item.style-3 .featured-icon i {
+.featured-item.style-3 .featured-icon .mainicon{
     -webkit-text-fill-color: inherit;
     border-radius: 50%;
     background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
@@ -31,6 +31,17 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+.mainicon1{
+    width: 60px;
+    height: 60px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-size: 150% 100%;
+}
 .featured-item .featured-icon i {
     display: inline-block;
 }
@@ -39,18 +50,27 @@
 }
 /* Add this to your stylesheet */
 .arrow {
-    position: absolute;
+    position:absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
 }
   
   .arrow.prev {
     left: 0;
+    background-color: gray;
+    color: white;
+    padding:5px;
+    border-radius: 50px;
 }
   
   .arrow.next {
     right: 0;
-
+    background-color: gray;
+    color: white;
+    padding:5px;
+    border-radius: 50px;
 }
 
 .z-index-1 {
@@ -59,7 +79,7 @@
 }
 .theme-title h6 {
     position: relative;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
     background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
@@ -73,6 +93,52 @@
 h2 {
     font-size: 40px;
     line-height: 50px;
-    font-weight: 800;
+    font-weight: 600;
+}
+.readmorebtn{
+    background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
+    color:white;
+    padding: 10px;
+    border-radius:50px;
 }
   
+@media(max-width:768px){
+    .featured-item{
+        /* margin-left: 40px; */
+        /* margin-right:40px; */
+        width:226px;
+    }
+    .text-justify{
+        text-align: center !important;
+    }
+    .arrow.next{
+        background-color: gray;
+        color: white;
+        padding:5px;
+        border-radius: 50px;
+    }
+    .arrow.prev{
+        background-color: gray;
+        color: white;
+        padding:5px;
+        border-radius: 50px;
+    }
+    .arrow{
+        position: absolute;
+        top:40%;
+    }
+}
+
+/* About us Component */
+
+.aboutusComponent{
+    margin-top:50px;
+    margin-bottom: 120px;
+}
+
+.aboutusTitle{
+    text-align:start !important;
+}
+.aboutusSubTitle{
+    font-weight: 600 !important;
+}

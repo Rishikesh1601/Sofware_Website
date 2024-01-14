@@ -56,7 +56,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header>
+    <header className=''>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -64,7 +64,7 @@ const Navbar = () => {
             <img className="h-16 w-18" src="http://dreamztechnologies.com/assets/uploads/logos/logo_transperant.png" alt="Dreamz" />
           </a>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex items-end justify-end lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -202,8 +202,8 @@ const Navbar = () => {
           </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead themeht-btn">
+            Social <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -324,7 +324,7 @@ const Navbar = () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Social
                 </a>
               </div>
             </div>

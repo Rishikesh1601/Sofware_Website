@@ -1,6 +1,6 @@
 header{
       background-color: #fff;
-      text-align: center;
+      /* text-align: center; */
       position: fixed;
       width: 100%;
       top: 0;
@@ -122,3 +122,5 @@ span{
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+
