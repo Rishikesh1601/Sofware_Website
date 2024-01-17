@@ -1,0 +1,42 @@
+.addbgimage{
+    background-image: url(https://themeht.com/template/soften/ltr/images/bg/02.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.counter {
+    position: relative;
+    text-align: center;
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    display: inline;
+    position: relative;
+}
+.counter span {
+    font-family: var(--themeht-secondary-font-family);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: var(--themeht-primary-color);
+    display: inline-block;
+}
+.counter h5 {
+    display: block;
+    font-weight: normal;
+    color: var(--themeht-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+}
+/* .makegap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
