@@ -142,3 +142,18 @@ h2 {
 .aboutusSubTitle{
     font-weight: 600 !important;
 }
+
+@media(max-width:768px){
+    .aboutusSubTitle{
+        font-size: 29px !important;
+    }
+    .paraAboutus{
+        text-align: justify;
+    }
+    .arrow.next{
+        margin-top:25px;
+    }
+    .arrow.prev{
+        margin-top: 25px;
+    }
+}

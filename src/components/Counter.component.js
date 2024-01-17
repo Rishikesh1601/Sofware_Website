@@ -44,25 +44,17 @@ const CounterComponent = () => {
   };
 
   return (
-    <section id="counter-box" className="p-0 text-center">
+    <section id="counter-box" className="mx-11 p-0 text-center">
       <div className="container mx-auto addbgimage">
-        <div class="theme-title z-index-1 pt-7">
+        {/* <div class="theme-title z-index-1 pt-7">
           <h6 className='text-center'>Facts and Figures</h6>
-        </div>
+        </div> */}
         <div className="p-8">
           <div className="flex flex-wrap">
+            <CounterItem count={14} label="Years of Experience" suffix="+" />
             <CounterItem count={500} label="Fortune Companies" suffix="+" />
-            <CounterItem count={600} label="Projects Delivered" suffix="+" />
-            <CounterItem count={40} label="Employees" suffix="+" />
-            <CounterItem count={30} label="Enterprises Products" suffix="+" />
             <CounterItem count={500} label="Wordpress Websites" suffix="+" />
-            <CounterItem count={20} label="Mobile Applications" suffix="+" />
-            <CounterItem count={15} label="Opencart Websites" suffix="+" />
-            <CounterItem count={10} label="Marketting Tools" suffix="+" />
-            <CounterItem count={13} label="Years of Experience" suffix="+" />
-            <CounterItem count={96} label="Enterprise and Customers" suffix="%" />
-            <CounterItem count={4} label="Rating on Google" suffix=".9" />
-            <CounterItem count={15} label="Technologies and Framework" />
+            <CounterItem count={800} label="Projects Delivered" suffix="+" />   
           </div>
         </div>
       </div>
@@ -74,7 +66,7 @@ const CounterItem = ({ count, label, suffix }) => (
   <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 px-2 mb-4">
     <div className="counter p-6">
       <div className="counter-desc">
-        <span className="count-number block" data-count={count} data-suffix={suffix}>
+        <span className="text-lg count-number block" data-count={count} data-suffix={suffix}>
           {count}
         </span>
         {suffix && <span className="block">{suffix}</span>}

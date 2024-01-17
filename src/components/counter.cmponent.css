@@ -18,7 +18,7 @@
     position: relative;
 }
 .counter span {
-    font-family: var(--themeht-secondary-font-family);
+    font-family: sans-serif;
     font-size: 50px;
     font-weight: 600;
     line-height: 50px;
@@ -30,7 +30,7 @@
     font-weight: normal;
     color: var(--themeht-text-color);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     margin: 0;
 }
@@ -40,3 +40,25 @@
     gap: 20px;
 } */
 
+
+/* for the clients slider */
+.image-container {
+    position: relative;
+  }
+  
+  .grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .grayscale {
+    filter: grayscale(0%);
+  }
+
+
+  @media (max-width:768px){
+    .grayscale{
+        filter: none !important;
+        width: 100%;
+    }
+  }
