@@ -55,9 +55,6 @@ const settings = {
     ],
   };
   
-
-  
-
   return (
     <section className="pt-5">
         <div class="theme-title z-index-1">

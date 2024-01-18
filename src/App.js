@@ -7,6 +7,7 @@ import AboutusComponent from './components/aboutus.component';
 import CounterComponent from './components/Counter.component';
 import CompaniesSlider from './components/Companiesslider';
 import TeamAgumentation from './components/Teamagumentation';
+import OurProjectComponent from './components/OurProject.component';
 function App() {
   return (
     <>
@@ -23,6 +24,9 @@ function App() {
       <br></br>
       <br></br>
       <CounterComponent />
+      <br></br>
+      <br></br>
+      <OurProjectComponent />
       <br></br>
       <br></br>
       <CompaniesSlider />
