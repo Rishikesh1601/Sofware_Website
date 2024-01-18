@@ -8,6 +8,7 @@ import CounterComponent from './components/Counter.component';
 import CompaniesSlider from './components/Companiesslider';
 import TeamAgumentation from './components/Teamagumentation';
 import OurProjectComponent from './components/OurProject.component';
+import Footer from './components/Footer.component';
 function App() {
   return (
     <>
@@ -30,6 +31,8 @@ function App() {
       <br></br>
       <br></br>
       <CompaniesSlider />
+      <br></br>
+      <Footer />
     </div>
     </>
   );

@@ -156,7 +156,7 @@ span{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition-duration: .3s;
+    /* transition-duration: .3s; */
   }
   /* instagram*/
   .containerOne{
@@ -164,15 +164,18 @@ span{
   }
   .containerOne:hover {
     background: #d62976 !important;
-    transition-duration: .3s;
+    /* transition-duration: .3s; */
   }
   /* twitter*/
   .containerTwo{
-    background: #00acee;
+    background: black;
+  }
+  .logo-twitter{
+    fill: white;
   }
   .containerTwo:hover {
-    background: #00acee;
-    transition-duration: .3s;
+    background: black;
+    /* transition-duration: .3s; */
   }
   /* linkdin*/
   .containerThree{
@@ -180,7 +183,7 @@ span{
   }
   .containerThree:hover {
     background: #0072b1;
-    transition-duration: .3s;
+    /* transition-duration: .3s; */
   }
   /* Whatsapp*/
   .containerFour{
@@ -188,12 +191,12 @@ span{
   }
   .containerFour:hover {
     background: #128C7E;
-    transition-duration: .3s;
+    /* transition-duration: .3s; */
   }
   
   .socialContainer:active {
     transform: scale(0.9);
-    transition-duration: .3s;
+    /* transition-duration: .3s; */
   }
   
   .socialSvg {
@@ -205,7 +208,7 @@ span{
   }
   
   .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
+    /* animation: slide-in-top 0.3s both; */
   }
   
   @keyframes slide-in-top {

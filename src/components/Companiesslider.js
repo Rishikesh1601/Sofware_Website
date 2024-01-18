@@ -1,41 +1,43 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import './card.css'
-import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
+// import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
 class CompaniesSlider extends Component {
   render() {
-    const NextArrow = (props) => {
-      const { onClick } = props;
-      return (
-        <div className="arrow next" onClick={onClick}>
-          <ChevronRightIcon className="h-6 w-6" />
-        </div>
-      );
-    };
+    // const NextArrow = (props) => {
+    //   const { onClick } = props;
+    //   return (
+    //     <div className="arrow next" onClick={onClick}>
+    //       <ChevronRightIcon className="h-6 w-6" />
+    //     </div>
+    //   );
+    // };
 
-    const PrevArrow = (props) => {
-      const { onClick } = props;
-      return (
-        <div className="arrow prev" onClick={onClick}>
-         <ChevronLeftIcon className="h-6 w-6" /> 
-        </div>
-      );
-    };
+    // const PrevArrow = (props) => {
+    //   const { onClick } = props;
+    //   return (
+    //     <div className="arrow prev" onClick={onClick}>
+    //      <ChevronLeftIcon className="h-6 w-6" /> 
+    //     </div>
+    //   );
+    // };
 
     var settings = {
       infinite: true,
       speed: 500,
       slidesToShow: 6,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       initialSlide: 0,
-      nextArrow: <NextArrow />,
-      prevArrow: <PrevArrow />,
+      // nextArrow: <NextArrow />,
+      // prevArrow: <PrevArrow />,
+      autoplay: true,
+      autoplaySpeed: 1000,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 5,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             infinite: true,
             // dots: true,
           },
@@ -44,7 +46,7 @@ class CompaniesSlider extends Component {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 2,
           },
         },
@@ -63,7 +65,7 @@ class CompaniesSlider extends Component {
         <div class="theme-title z-index-1 pt-7">
           <h6 className='text-center'>Our Clients</h6>
         </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="sliderComponentForMobile">
           <div className="image-container">
             <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/IOF.jpg" alt="" className="grayscale" />
           </div>

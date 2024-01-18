@@ -142,6 +142,10 @@ h2 {
 .aboutusSubTitle{
     font-weight: 600 !important;
 }
+.sliderComponentForMobile{
+    width:95%;
+    margin-left:40px;
+}
 
 @media(max-width:768px){
     .aboutusSubTitle{
@@ -161,5 +165,9 @@ h2 {
     }
     .teamAugComponent{
         margin-top:-40px;
+    }
+    .sliderComponentForMobile{
+        width:95% !important;
+        margin-left:10px !important;
     }
 }
