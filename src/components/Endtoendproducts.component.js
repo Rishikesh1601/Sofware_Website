@@ -20,7 +20,7 @@ const EndToEndComponent = () => {
   // ... (Previous code remains unchanged)
 
 const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -62,7 +62,7 @@ const settings = {
     <section className="pt-5">
         <div class="theme-title z-index-1">
           <h6 className='text-center'>A Comprehensive Suite of</h6>
-          <h2 className='text-center'>End to End Engineering</h2>
+          <h2 className='text-center aboutusSubTitle'>End to End Engineering</h2>
         </div>
       <div className="container mt-11">
         <Slider {...settings}>

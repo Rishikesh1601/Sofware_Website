@@ -133,7 +133,7 @@ h2 {
 
 .aboutusComponent{
     margin-top:-60px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .aboutusTitle{
@@ -155,5 +155,11 @@ h2 {
     }
     .arrow.prev{
         margin-top: 25px;
+    }
+    .mobilewaliTeamAugImage{
+        display: none;
+    }
+    .teamAugComponent{
+        margin-top:-40px;
     }
 }

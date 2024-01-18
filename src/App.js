@@ -6,6 +6,7 @@ import EndToEndComponent from './components/Endtoendproducts.component';
 import AboutusComponent from './components/aboutus.component';
 import CounterComponent from './components/Counter.component';
 import CompaniesSlider from './components/Companiesslider';
+import TeamAgumentation from './components/Teamagumentation';
 function App() {
   return (
     <>
@@ -13,7 +14,12 @@ function App() {
       <Navbar />
       <MainTitle />
       <AboutusComponent />
+      <br></br>
+      <br></br>
       <EndToEndComponent />
+      <br></br>
+      <br></br>
+      <TeamAgumentation />
       <br></br>
       <br></br>
       <CounterComponent />
