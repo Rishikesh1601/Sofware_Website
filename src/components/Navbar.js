@@ -4,33 +4,28 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
   Bars3Icon,
-  SquaresPlusIcon,
+
   XMarkIcon,
-  CurrencyRupeeIcon,
-  DocumentArrowDownIcon,
-  BriefcaseIcon,
-  BanknotesIcon,
-  CheckBadgeIcon,
-  CalculatorIcon,
+
   ArrowTrendingUpIcon,
-  ChartBarIcon,
+
   RectangleGroupIcon,
   ComputerDesktopIcon,
   DevicePhoneMobileIcon,
   CloudIcon,
   CpuChipIcon,
-  CodeBracketIcon,
+
   CodeBracketSquareIcon,
   CubeTransparentIcon,
   UserGroupIcon,
   AcademicCapIcon,
 
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
-  { name: 'Website Development', href: '#', icon: ComputerDesktopIcon },
+  { name: 'Website Development', href: '/website development', icon: ComputerDesktopIcon },
   { name: 'Mobile App Development',  href: '#', icon: DevicePhoneMobileIcon },
   { name: 'Software Testing',  href: '#', icon: ArrowPathIcon }
 ]
