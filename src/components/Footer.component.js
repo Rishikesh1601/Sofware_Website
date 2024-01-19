@@ -58,7 +58,7 @@ const Footer = () => {
                   <div className="col-span-1">
                     <ul className="list-none addlineHeightFooter1">
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/" className="text-blue-500 text-lg">
                           Home
                         </a>
                       </li>
