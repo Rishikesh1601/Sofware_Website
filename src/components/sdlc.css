@@ -54,4 +54,11 @@
     color: #555;
     text-align: justify;
   }
+
+  @media (max-width: 767px) {
+    .sdlc-card {
+        /* display: flex; */
+        flex: 0 0 calc(100% - 20px);
+    }
+}
   
