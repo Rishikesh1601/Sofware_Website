@@ -32,7 +32,7 @@ const services = [
 const products = [
   { name: 'API Development', href: '/api development', icon: CloudIcon },
   { name: 'AIops Solutions',  href: '/aiops', icon: CpuChipIcon },
-  { name: 'DEVops Services',  href: '#', icon: CodeBracketSquareIcon },
+  { name: 'DEVops Services',  href: '/devops', icon: CodeBracketSquareIcon },
   { name: 'Block Chain Technology',  href: '#', icon: CubeTransparentIcon },
   { name: 'ITops',  href: '#', icon: ArrowTrendingUpIcon },
 ]

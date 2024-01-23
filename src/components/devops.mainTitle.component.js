@@ -3,8 +3,10 @@ import './navbar.css'
 // import { ReactComponent as Heropng } from '../assets/heropage.svg';
 // import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg';
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
-import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
-const MobileDevelopmentMainTitle = () => {
+// import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
+// import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
+import {ReactComponent as DevOps} from '../assets/devOps.svg'
+const DevOpsMainTitle = () => {
     
     return(
         <>
@@ -13,18 +15,18 @@ const MobileDevelopmentMainTitle = () => {
                 <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
-                    <div class="rounded box-shadow relative ">
-                        <MobileDev className="w-96 h-auto heropngEdit1"/>
+                    <div class="mt-7 rounded box-shadow relative ">
+                        <DevOps className="w-96 h-auto heropngEdit1"/>
                     </div>
                     </div>
                 </div>
                 <div class="lg:w-6/12 mt-36">
                 <h1 class="mb-4 text-black text-5xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl animate__animated animate__shakeX animate__slow font-bold text-center">
   <span class="text-4xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl">
-  Mobile App Development
+  DevOps Services
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz Mobile app development is the process of creating software applications that run on a mobile device, such as a smartphone, tablet, or wearable device. Mobile app development can range from the development of a simple single-page app to complex, multi-page apps. Mobile apps are typically written in a programming language suitable for the device they are designed for, such as Objective-C or Java for iOS and Android, respectively.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we offer comprehensive DevOps services to help our clients achieve their desired business outcomes. We have a dedicated team of DevOps professionals who are well-versed in the latest tools and technologies and can help our clients to implement DevOps solutions for their businesses.</p>
                 </div>
                 </div>
             </div>
@@ -45,4 +47,4 @@ const MobileDevelopmentMainTitle = () => {
     )
 }
 
-export default MobileDevelopmentMainTitle;
+export default DevOpsMainTitle;

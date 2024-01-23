@@ -60,6 +60,12 @@ header{
     left:125px;
 
 }
+.heropngEdit1{
+    position: relative;
+    top:100px;
+    left:125px;
+
+}
 
 .gradient {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
