@@ -69,7 +69,7 @@ const MobileAppCapabilities = () => {
         }}>
           {buttonNames[activeButton]}
         </h2>
-        <p className="text-gray-700">{displayText}</p>
+        <p className="text-gray-700 text-justify">{displayText}</p>
       </div>
       )}
     </div>
