@@ -7,6 +7,7 @@ import WebsiteDevelopment from './page/websitedevelopment.page';
 import MobileDevelopmentPage from './page/mobiledevelopment.page';
 import SoftwareTestingPage from './page/softwaretesting.page';
 import ApiDevelopmentPage from './page/apidevelopment.page';
+import AiopsPage from './page/aiops.page';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/mobile development" element={<MobileDevelopmentPage />} />
         <Route path="/software testing" element={<SoftwareTestingPage />} />
         <Route path="/api development" element={<ApiDevelopmentPage />} />
+        <Route path="/aiops" element={<AiopsPage />} />
       </Routes>
     </Router>
     </>
