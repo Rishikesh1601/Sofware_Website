@@ -27,7 +27,7 @@ const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
   { name: 'Website Development', href: '/website development', icon: ComputerDesktopIcon },
   { name: 'Mobile App Development',  href: '/mobile development', icon: DevicePhoneMobileIcon },
-  { name: 'Software Testing',  href: '#', icon: ArrowPathIcon }
+  { name: 'Software Testing',  href: '/software testing', icon: ArrowPathIcon }
 ]
 const products = [
   { name: 'API Development', href: '#', icon: CloudIcon },

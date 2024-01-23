@@ -5,6 +5,7 @@ import HomePage from './page/home.page';
 import CustomSoftwareDevelopmentPage from './page/customsoftwaredevelopment.page';
 import WebsiteDevelopment from './page/websitedevelopment.page';
 import MobileDevelopmentPage from './page/mobiledevelopment.page';
+import SoftwareTestingPage from './page/softwaretesting.page';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/custom software development" element={<CustomSoftwareDevelopmentPage />} />
         <Route path="/website development" element={<WebsiteDevelopment />} />
         <Route path="/mobile development" element={<MobileDevelopmentPage />} />
+        <Route path="/software testing" element={<SoftwareTestingPage />} />
       </Routes>
     </Router>
     </>
