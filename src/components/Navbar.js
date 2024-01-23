@@ -30,7 +30,7 @@ const services = [
   { name: 'Software Testing',  href: '/software testing', icon: ArrowPathIcon }
 ]
 const products = [
-  { name: 'API Development', href: '#', icon: CloudIcon },
+  { name: 'API Development', href: '/api development', icon: CloudIcon },
   { name: 'AIops Solutions',  href: '#', icon: CpuChipIcon },
   { name: 'DEVops Services',  href: '#', icon: CodeBracketSquareIcon },
   { name: 'Block Chain Technology',  href: '#', icon: CubeTransparentIcon },

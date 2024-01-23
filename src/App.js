@@ -6,6 +6,7 @@ import CustomSoftwareDevelopmentPage from './page/customsoftwaredevelopment.page
 import WebsiteDevelopment from './page/websitedevelopment.page';
 import MobileDevelopmentPage from './page/mobiledevelopment.page';
 import SoftwareTestingPage from './page/softwaretesting.page';
+import ApiDevelopmentPage from './page/apidevelopment.page';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/website development" element={<WebsiteDevelopment />} />
         <Route path="/mobile development" element={<MobileDevelopmentPage />} />
         <Route path="/software testing" element={<SoftwareTestingPage />} />
+        <Route path="/api development" element={<ApiDevelopmentPage />} />
       </Routes>
     </Router>
     </>
