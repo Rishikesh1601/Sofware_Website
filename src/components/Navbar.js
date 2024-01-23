@@ -26,7 +26,7 @@ import { ChevronDownIcon} from '@heroicons/react/20/solid'
 const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
   { name: 'Website Development', href: '/website development', icon: ComputerDesktopIcon },
-  { name: 'Mobile App Development',  href: '#', icon: DevicePhoneMobileIcon },
+  { name: 'Mobile App Development',  href: '/mobile development', icon: DevicePhoneMobileIcon },
   { name: 'Software Testing',  href: '#', icon: ArrowPathIcon }
 ]
 const products = [
