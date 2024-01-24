@@ -28,7 +28,7 @@ const MainTitle = () => {
                     </div>
                 </div>
                 <div class="lg:w-6/12 mt-36">
-                    <h1 class="mb-4 text-black text-7xl animate__animated animate__shakeX animate__slow font-bold text-center">Top Notch <br></br><span>{dynamicText}</span><br></br> Solution </h1>
+                    <h1 class="mb-4 text-black text-7xl animate__animated animate__shakeX animate__slow font-bold text-center">Seamless <br></br><span>{dynamicText}</span><br></br> Solutions </h1>
                     <p class="text-gray-600 font-bold text-center text-lg mb-5 animate__animated animate__zoomIn animate__slow">A global IT consulting & software solutions provider</p>
                     <div class="animate__animated animate__fadeInUp animate__slow flex justify-center items-center mt-12">
                     <a class="themeht-btn" href="#">Get Started</a>
