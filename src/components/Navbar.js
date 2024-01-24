@@ -150,10 +150,10 @@ const Navbar = () => {
           </Popover>
 
           
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Technology
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+          </a> */}
+          <a href="/contactus" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Contact Us
           </a>
           <Popover className="relative">
@@ -290,14 +290,14 @@ const Navbar = () => {
                     </>
                   )}
                 </Disclosure>
-                <a
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Technology
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="/contactus"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us

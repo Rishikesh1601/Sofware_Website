@@ -11,6 +11,7 @@ import AiopsPage from './page/aiops.page';
 import DevOpsPage from './page/devops.page';
 import BlockChainPage from './page/blockchain.page';
 import ItopsPage from './page/itops.page';
+import ContactUsPage from './page/contactus.page';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/devops" element={<DevOpsPage />} />
         <Route path="/blockchain" element={<BlockChainPage />} />
         <Route path="/itops" element={<ItopsPage />} />
+        <Route path="/contactus" element={<ContactUsPage />} />
       </Routes>
     </Router>
     </>

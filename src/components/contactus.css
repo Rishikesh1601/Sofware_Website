@@ -1,0 +1,46 @@
+/* #contactForm{
+    width:150%;
+} */
+
+.manageIframe{
+    width:75%;
+    margin-top:25px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.makeitaround{
+    display: flex;
+    flex-wrap: nowrap !important;
+    justify-content: space-around;
+    width:max-content;
+}
+
+@media(max-width:768px){
+    .makeitaround{
+        display: block;
+        width:auto;
+    } 
+    .manageIframe{
+        width:100%;
+        margin-left:10px;
+    }
+    .contactusedit{
+        margin-top:40px;
+    }
+}
+
+.buttonaboutus {
+    border: none;
+    padding: 10px 25px;
+    background: linear-gradient(115deg, #00c4cc, #4283a9);
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    background-size: 150% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}

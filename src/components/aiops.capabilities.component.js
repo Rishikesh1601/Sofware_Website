@@ -34,7 +34,7 @@ const AIopsCapabilities = () => {
   return (
     <div className="flex flex-col items-center mt-8">
         <div class="theme-title mb-4 text-center">
-            <h6 className='aboutusTitle'>Responsibilities of ITOps</h6>
+            <h6 className='aboutusTitle'>Why AIOPS Solutions</h6>
         </div>
       <div className="mb-4">
         {buttonNames.map((buttonName, index) => (
