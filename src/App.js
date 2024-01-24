@@ -9,6 +9,8 @@ import SoftwareTestingPage from './page/softwaretesting.page';
 import ApiDevelopmentPage from './page/apidevelopment.page';
 import AiopsPage from './page/aiops.page';
 import DevOpsPage from './page/devops.page';
+import BlockChainPage from './page/blockchain.page';
+import ItopsPage from './page/itops.page';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/api development" element={<ApiDevelopmentPage />} />
         <Route path="/aiops" element={<AiopsPage />} />
         <Route path="/devops" element={<DevOpsPage />} />
+        <Route path="/blockchain" element={<BlockChainPage />} />
+        <Route path="/itops" element={<ItopsPage />} />
       </Routes>
     </Router>
     </>
