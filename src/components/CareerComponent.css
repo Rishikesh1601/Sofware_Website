@@ -1,0 +1,47 @@
+.career-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .accordionji {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width:50%;
+    overflow: hidden;
+    transition: max-height 0.9s ease-out;
+    max-height: 50px;
+  }
+  
+  .accordionji button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .accordionji.active {
+    background-color: #e6f7ff;
+    max-height: 1000px; /* Slight blue background for active accordion */
+  }
+  
+  .description {
+    padding: 10px;
+    background-color: #f9f9f9;
+    padding-left:30px;
+  }
+
+  .makelist1{
+    margin-left:30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .makelistlikealist{
+    list-style: decimal;
+  }
+  
