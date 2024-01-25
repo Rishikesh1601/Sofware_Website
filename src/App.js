@@ -12,6 +12,7 @@ import DevOpsPage from './page/devops.page';
 import BlockChainPage from './page/blockchain.page';
 import ItopsPage from './page/itops.page';
 import ContactUsPage from './page/contactus.page';
+import TrustedClientsPage from './page/trustedclients.page';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/blockchain" element={<BlockChainPage />} />
         <Route path="/itops" element={<ItopsPage />} />
         <Route path="/contactus" element={<ContactUsPage />} />
+        <Route path="/trusted clients" element={<TrustedClientsPage />} />
       </Routes>
     </Router>
     </>

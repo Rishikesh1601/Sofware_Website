@@ -37,7 +37,7 @@ const products = [
   { name: 'ITops',  href: '/itops', icon: ArrowTrendingUpIcon },
 ]
 const aboutus = [
-  { name: 'Our Trusted Clients', href: '#', icon: UserGroupIcon },
+  { name: 'Our Trusted Clients', href: '/trusted clients', icon: UserGroupIcon },
   { name: 'Career',  href: '#', icon: AcademicCapIcon },
 ]
 
