@@ -44,7 +44,7 @@ const CareerComponent = () => {
             <h6 className='aboutusTitle'>Current Job Openings</h6>
     </div>
     <div className="flex edit-this-career-component">
-    <div className="career-container w-full ms-24">
+    <div className="career-container w-full ms-24 jobopenings">
       <div className={`accordionji ${accordion1 ? "active" : ""}`}>
         <button onClick={() => toggleAccordion(1)}>Job ID: DME001 Digital Marketing Executive</button>
         {accordion1 && (
@@ -145,7 +145,7 @@ const CareerComponent = () => {
       </div>
     </div>
 
-    <div className="career-container me-12">
+    <div className="career-container me-12 jobForm">
 
           <div class="w-full md:w-96 md:max-w-full mx-auto">
         <div class="p-6 border border-gray-300 sm:rounded-md">

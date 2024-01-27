@@ -26,7 +26,7 @@
   
   .accordionji.active {
     background-color: #e6f7ff;
-    max-height: 1000px; /* Slight blue background for active accordion */
+    max-height: max-content; /* Slight blue background for active accordion */
   }
   
   .description {
@@ -51,4 +51,24 @@
     width:max-content;
     gap: 40px;
     position: relative;
+  }
+
+  @media(max-width:768px){
+    .edit-this-career-component{
+      display: flex !important;
+      flex-direction: column !important;
+      flex-wrap: wrap !important;
+      justify-content: space-around !important;
+      width:min-content;
+    }
+    .career-container{
+      margin-left:4px !important;
+    }
+    .jobopenings{
+      width:90% !important;
+    }
+    .jobForm{
+      width:max-content !important;
+      margin-left:10px !important;
+    }
   }
