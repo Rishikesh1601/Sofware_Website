@@ -9,7 +9,6 @@ const CareerPage = () => {
         <>
         <Navbar />
         <CareerMainTitle />
-        <br></br>
         <CareerComponent />
         <br></br>
         <br></br>

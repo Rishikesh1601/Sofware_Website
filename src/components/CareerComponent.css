@@ -1,7 +1,6 @@
 .career-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 50px;
   }
   
@@ -10,7 +9,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    width:50%;
+    width:100%;
     overflow: hidden;
     transition: max-height 0.9s ease-out;
     max-height: 50px;
@@ -20,7 +19,7 @@
     width: 100%;
     padding: 10px;
     text-align: left;
-    background-color: #f0f0f0;
+    background-color: #e0f7fa;
     border: none;
     cursor: pointer;
   }
@@ -44,4 +43,12 @@
   .makelistlikealist{
     list-style: decimal;
   }
-  
+  .edit-this-career-component{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around !important;
+    width:max-content;
+    gap: 40px;
+    position: relative;
+  }
