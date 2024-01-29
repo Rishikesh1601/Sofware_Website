@@ -63,12 +63,12 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/aboutUs" className="text-blue-500 text-lg">
                           About Us
                         </a>
                       </li>
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/trusted clients" className="text-blue-500 text-lg">
                           Our Trusted Clients
                         </a>
                       </li>
@@ -77,7 +77,7 @@ const Footer = () => {
                   <div className="col-span-1">
                     <ul className="list-none addlineHeightFooter1">
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/career" className="text-blue-500 text-lg">
                           Career at Dreamz
                         </a>
                       </li>
@@ -87,7 +87,7 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/contactus" className="text-blue-500 text-lg">
                           Contact Us
                         </a>
                       </li>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <div className="col-span-1">
                     <ul className="list-none addlineHeightFooter1">
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/custom software development" className="text-blue-500 text-lg">
                           Services
                         </a>
                       </li>

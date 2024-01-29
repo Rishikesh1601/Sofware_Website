@@ -14,6 +14,7 @@ import ItopsPage from './page/itops.page';
 import ContactUsPage from './page/contactus.page';
 import TrustedClientsPage from './page/trustedclients.page';
 import CareerPage from './page/career.page';
+import AboutUsPage from './page/aboutus.page';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/contactus" element={<ContactUsPage />} />
         <Route path="/trusted clients" element={<TrustedClientsPage />} />
         <Route path="/career" element={<CareerPage />} />
+        <Route path="/aboutUs" element={<AboutUsPage />} />
       </Routes>
     </Router>
     </>
