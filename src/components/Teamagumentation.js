@@ -12,9 +12,9 @@ function TeamAgumentation() {
             <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Team Augmentation</h6>
-                <h2 className='aboutusSubTitle'>Stop Recruitment, Start Developing</h2>
+                <h2 className='aboutusSubTitle'>Unlock Efficiency, Embrace Development</h2>
                 </div>
-                <p class="mb-5 text-lg text-gray-400 paraAboutus">Hire a dedicated development team from Dreamz to design, build, deliver, and scale your idea. Hire highly trained skill experts developers, designer & tester and set up your dedicated development team quickly and easily. Meet changing needs of your enterprise IT team or work on your unique idea from scratch by hiring qualified and experienced developers. Hiring a dedicated development team saves cost, speeds up the time-to-market of apps, and makes hiring much easier and faster with access to top talents worldwide.</p>
+                <p class="mb-5 text-lg text-gray-400 paraAboutus">Elevate your projects with Dreamz's dedicated development team. Hire skilled developers, designers, and testers to swiftly design, build, deliver, and scale your idea. Tailor your team to meet the changing needs of your enterprise IT or bring your unique concept to life from scratch. Save costs, accelerate app time-to-market, and streamline hiring with our qualified and experienced professionals. Stop recruitment hassles and start developing with Dreamz's dedicated teams.</p>
             </div>
             <div class="lg:w-1/2 md:w-full mobilewaliTeamAugImage">
                 <TeamAug className='w-full h-96'/>

@@ -14,9 +14,9 @@ function AboutusComponent() {
             <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>About Us</h6>
-                <h2 className='aboutusSubTitle'>We're Best In Software Development</h2>
+                <h2 className='aboutusSubTitle'>Unleashing Software Brilliance</h2>
                 </div>
-                <p class="mb-5 text-lg text-gray-400 paraAboutus">Dreamz is a global IT consulting & software solutions provider with 40+ software consultants working full time across 2 delivery centres. Dreamz is headquartered in Pune, India with offices in USA. Our commitment to quality and 12+ years of experience has made us serve over 800+ clients across 10+ countries with 85% client retention. Our objective is to deliver robust, scalable, innovative and quality solutions while adhering to strict deadlines, for small-medium businesses as well as Fortune 500 Companies. We encourage to our team to understand and improve the technology that  are evolving in business solution and make the perfect enterprises solution for the customers. We believe to make a transformation partner offering custom software development, business intelligence services, and mobile and web application development at scale.</p>
+                <p class="mb-5 text-lg text-gray-400 paraAboutus">Dreamz: Your global IT partner for scalable solutions. With 40+ dedicated consultants across two centers, we bring 12+ years of experience and commitment to quality. Serving 800+ clients in 10+ countries, Dreamz excels in delivering innovative solutions for businesses of all sizes, from small ventures to Fortune 500. Our team stays ahead in evolving technologies, offering cutting-edge business solutions in custom software development, business intelligence, and scalable applications. Elevate your digital presence with Dreamz – where innovation meets excellence.</p>
                 <a class="themeht-btn" href="/aboutUs">Explore More</a>
             </div>
             </div>

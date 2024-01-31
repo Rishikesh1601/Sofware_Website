@@ -22,7 +22,7 @@ const CustomSoftwareDevelopmentMainTitle = () => {
     Custom Software Development
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we specialize in custom software development. We have a talented and experienced team of developers who are well–versed in a variety of programming languages, including Python, Java, JavaScript, and C#. Our team of developers will work closely with you to create a custom–made software solution that meets your unique business needs.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Experience tailored solutions at Dreamz, where our skilled team excels in custom software development. Proficient in languages like Python, Java, JavaScript, and C#, our experienced developers collaborate closely with you to craft bespoke software solutions that perfectly align with your unique business requirements</p>
                 </div>
                 </div>
             </div>
