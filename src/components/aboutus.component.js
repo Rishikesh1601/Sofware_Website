@@ -17,7 +17,7 @@ function AboutusComponent() {
                 <h2 className='aboutusSubTitle'>We're Best In Software Development</h2>
                 </div>
                 <p class="mb-5 text-lg text-gray-400 paraAboutus">Dreamz is a global IT consulting & software solutions provider with 40+ software consultants working full time across 2 delivery centres. Dreamz is headquartered in Pune, India with offices in USA. Our commitment to quality and 12+ years of experience has made us serve over 800+ clients across 10+ countries with 85% client retention. Our objective is to deliver robust, scalable, innovative and quality solutions while adhering to strict deadlines, for small-medium businesses as well as Fortune 500 Companies. We encourage to our team to understand and improve the technology that  are evolving in business solution and make the perfect enterprises solution for the customers. We believe to make a transformation partner offering custom software development, business intelligence services, and mobile and web application development at scale.</p>
-                <a class="themeht-btn" href="#!">Explore More</a>
+                <a class="themeht-btn" href="/aboutUs">Explore More</a>
             </div>
             </div>
         </div>

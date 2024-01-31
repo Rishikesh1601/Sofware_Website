@@ -1,0 +1,68 @@
+/* CardTemplate.css */
+.endlc-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+  }
+  
+  .endlc-card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust as needed */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    background: linear-gradient(90deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .endlc-card:hover {
+    transform: scale(1.02);
+  }
+  
+  
+  .endlc-card-body {
+    padding: 20px;
+  }
+  
+  .endlc-title {
+    /* color: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7); */
+    margin-bottom: 10px;
+    font-size:30px !important;
+    background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-align: center !important;
+    
+  }
+  
+  .endlc-para {
+    color: #555;
+    text-align: justify;
+  }
+
+  /* styles.css */
+
+/* Initially set the border-radius to make it rounded */
+.mainicon1 {
+    border-radius: 50%;
+    transition: border-radius 0.5s ease-in-out;
+  }
+  
+  /* Apply a different style when the card is being hovered */
+  .endlc-card:hover .mainicon1 {
+    border-radius: 0; /* Set border-radius to 0 for a square icon */
+  }
+  
+
+  @media (max-width: 767px) {
+    .endlc-card {
+        /* display: flex; */
+        flex: 0 0 calc(100% - 20px);
+    }
+}
+  
