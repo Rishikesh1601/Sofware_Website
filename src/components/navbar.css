@@ -71,7 +71,7 @@ header{
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 .banner-2{
-    padding: 40px 0 230px;
+    padding: 30px 0 200px;
 }
 .grediant-bg2 {
     background-image: radial-gradient(75vw 75vh at left 0 top 0, #dbfdfe, transparent), radial-gradient(75vw 75vh at left 100% top 0, #6420ff, transparent), radial-gradient(75vw 75vh at left 100% top 100%, #00c4cc, transparent), radial-gradient(75vw 75vh at left 0 top 100%, #7d2ae7, transparent);
