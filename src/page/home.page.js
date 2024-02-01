@@ -15,7 +15,6 @@ const HomePage = () => {
     <>
     <Navbar />
     <MainTitle />
-    <br></br>
     <AboutusComponent />
     <br></br>
     <br></br>
