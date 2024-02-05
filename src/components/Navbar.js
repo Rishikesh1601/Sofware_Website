@@ -85,7 +85,7 @@ const Navbar = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-5 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
+              <Popover.Panel className="edit-this-service absolute -left-8 top-full z-10 mt-5 w-screen overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
                 <div className="p-4">
                   {services.map((item) => (
                     <div

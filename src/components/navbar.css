@@ -20,12 +20,14 @@ header{
     padding:15px;
     padding-left:25px;
     padding-right:25px;
-    box-shadow: 5px 5px 10px 2px #d3cccc;
-    border: 1px solid lightgray;
+    /* box-shadow: 5px 5px 10px 2px #d3cccc;
+    border: 1px solid lightgray; */
     border-radius: 50px;
     margin-left: 160px;
 }
-
+.edit-this-service{
+  max-width: max-content !important;
+}
 .mainHead{
     font-size: large;
 }
