@@ -18,22 +18,22 @@ const SoftwareTestingCapabilities = () => {
     // You can customize this function to return different text for each button
     switch (index) {
       case 0:
-        return "Automated testing services are designed to automate the process of running tests on software applications. By automating the testing process, developers and Quality Assurance (QA) teams can ensure that their software meets the highest standards of quality and is ready to launch. Automated testing services can be used to test a wide variety of software applications, including web applications, mobile apps, games, enterprise applications, and more.";
+        return "Automated testing services streamline the testing of software applications by automating test execution. This approach enables developers and Quality Assurance (QA) teams to verify software quality efficiently, ensuring readiness for launch. These services are versatile, suitable for testing various applications like web apps, mobile apps, games, and enterprise solutions.";
       
       case 1:
-        return "Manual software testing is the process of manually testing software for defects. It requires a tester to play the role of an end-user and use most of all features of the application to ensure correct behavior. To ensure completeness of testing, the tester often follows a written test plan that leads them through a set of important test cases. Manual software testing is the most laborious and time consuming of all testing types. It can be performed at any stage of the software development process and is usually done at the end of the development cycle. Although manual testing is an important part of the software development process."
+        return "Manual software testing involves the manual examination of software for defects, with testers acting as end-users to verify correct behavior. Testers typically follow a written test plan, executing important test cases to ensure thorough testing. This method, though laborious and time-consuming, is integral to the software development process, ensuring quality at any stage. Manual testing is often conducted towards the end of the development cycle to assess software readiness."
       
       case 2:
-        return "Penetration testing services are designed to help organizations identify and mitigate potential security vulnerabilities. These services provide detailed assessments and reports of identified issues, and can provide recommendations for remediating any identified security weaknesses. Depending on the scope of the engagement, these services may include network penetration testing, application penetration testing, wireless penetration testing."
+        return "Penetration testing services aim to assist organizations in pinpointing and addressing potential security vulnerabilities. These services entail comprehensive assessments and reports, detailing identified issues and offering remediation recommendations. Depending on the scope, services may cover network, application, and wireless penetration testing."
       
       case 3:
-        return "Performance Testing Services involve testing the speed, scalability and stability of an application, system or network. This type of testing is used to ensure that the application meets its performance requirements. Performance testing services can include load testing, stress testing, volume testing, endurance testing, and more. These tests are conducted to evaluate if the application can handle the expected user load and traffic."
+        return "Performance Testing Services assess the speed, scalability, and stability of applications, systems, or networks to ensure they meet performance requirements. These services encompass various tests like load testing, stress testing, volume testing, and endurance testing. The goal is to evaluate if the application can effectively manage anticipated user load and traffic."
       
       case 4:
-        return "API testing is the process of testing application programming interfaces (APIs) to make sure they meet expectations for functionality, performance, reliability, and security. API testing is a type of software testing that involves testing application programming interfaces (APIs) directly and as part of integration testing to determine if they meet expectations for functionality, reliability, performance, and security."
+        return "API testing involves evaluating application programming interfaces (APIs) to ensure they meet predefined criteria for functionality, reliability, performance, and security. It is a type of software testing that examines APIs directly and as part of integration testing to ascertain their effectiveness in meeting these expectations."
       
       case 5:
-        return "Automated mobile app testing is the use of automated tools to execute tests on a mobile app. These tools help identify and fix any bugs or issues with the app before it goes live. Automated testing can help save time and money, as manual testing of mobile apps can be very time-consuming and expensive. Automated tests can also be used to better understand the user experience and identify usability issues. Commonly used automated mobile app testing tools include Appium, TestFairy, and Robotium."
+        return "Automated mobile app testing involves utilizing automated tools to execute tests on a mobile app, aiding in identifying and resolving bugs or issues before the app's launch. This approach saves time and money compared to manual testing, which can be laborious and costly. Automated tests also provide insights into the user experience and usability issues. Popular tools for automated mobile app testing include Appium, TestFairy, and Robotium."
       
       default:
       return '';
@@ -69,7 +69,7 @@ const SoftwareTestingCapabilities = () => {
         }}>
           {buttonNames[activeButton]}
         </h2>
-        <p className="text-gray-700">{displayText}</p>
+        <p className="text-gray-700 text-justify">{displayText}</p>
       </div>
       )}
     </div>
