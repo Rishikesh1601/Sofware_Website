@@ -18,22 +18,22 @@ const ButtonComponent = () => {
     // You can customize this function to return different text for each button
     switch (index) {
       case 0:
-        return "Dreamz is a web development agency that specializes in designing and building innovative websites for businesses of all sizes. We provide a comprehensive range of services, from website design and development to content management systems and ecommerce solutions.";
+        return "Dreamz is a leading web development agency dedicated to crafting innovative websites tailored to businesses of all sizes. Our extensive suite of services includes website design and development, content management systems, and ecommerce solutions. With a focus on delivering exceptional results, we collaborate closely with our clients to transform their visions into reality.";
       
       case 1:
-        return "Dreamz is available for both Android and iOS devices. Download the app today and start managing your dreams and goals in one place. Our app is designed to be user friendly and intuitive, so you can get started right away."
+        return "Dreamz is now available on both Android and iOS devices. Download the app today to seamlessly manage your dreams and goals in one convenient location. Our user-friendly and intuitive app ensures you can dive in and start using it right away."
       
       case 2:
-        return "We understand that a website is an essential tool for businesses of all sizes, and we will work hard to create a website that meets your specific needs and objectives."
+        return "At Dreamz, we recognize the pivotal role a website plays as a vital tool for businesses of all sizes. Our dedicated team is committed to working diligently to craft a tailored website that aligns with your specific needs and objectives."
       
       case 3:
-        return "Dreamz offers a wide variety of software and services that can help you manage your business, increase productivity, and save money. With Dreamz, you will get access to a wide range of popular software and services, including accounting, project management, customer relationship management (CRM), and more."
+        return "Dreamz provides a diverse array of software and services designed to streamline business operations, boost productivity, and optimize cost-efficiency. With Dreamz, you gain access to an extensive selection of popular software and services, encompassing accounting, project management, customer relationship management (CRM), and beyond."
       
       case 4:
-        return "Dreamz is an enterprise software development company that specializes in building custom software applications for businesses of all sizes. Our experienced team of developers, designers and project managers can help you create a high–quality product that will achieve your business goals."
+        return "Dreamz is a premier enterprise software development company renowned for crafting bespoke software applications tailored to businesses of all sizes. Our seasoned team of developers, designers, and project managers possesses the expertise to collaborate with you in creating a high-quality product that aligns seamlessly with your business objectives."
       
       case 5:
-        return "We develop Business Excellence Software is designed to help you become more efficient and productive. With comprehensive reporting capabilities, you can easily identify areas where you can improve and make changes to help your business reach its goals."
+        return "Our Business Excellence Software is meticulously crafted to enhance your efficiency and productivity. Equipped with robust reporting features, it empowers you to effortlessly pinpoint areas for improvement and implement changes conducive to achieving your business objectives."
       
       default:
       return '';

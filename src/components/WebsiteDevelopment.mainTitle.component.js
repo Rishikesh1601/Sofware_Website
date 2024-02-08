@@ -23,7 +23,7 @@ const WebsiteDevelopmentMainTitle = () => {
   Web Development
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we believe that great web design is essential for creating an effective web presence. Our team of web designers can create a website that meets your exact specifications, utilizing the latest technologies and trends. We understand the importance of creating a website that. We understand that websites are an integral component of your organization’s marketing and communications strategy and we strive to create solutions that fit your brand and deliver the user experience your customers expect. We have served all-scale businesses with top-notch web development services in Pune.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we firmly believe in the significance of outstanding web design for establishing a compelling online presence. Our dedicated team of web designers is committed to crafting websites that align precisely with your requirements, leveraging cutting-edge technologies and contemporary trends. Recognizing the pivotal role of websites in your organization’s marketing and communication strategy, we endeavor to deliver solutions that resonate with your brand and meet the user experience standards expected by your customers. With a track record of serving businesses of all scales, we offer exemplary web development services in Pune.</p>
                 </div>
                 </div>
             </div>

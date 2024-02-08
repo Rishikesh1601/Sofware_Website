@@ -13,9 +13,9 @@ const WhyWebDevelopment = () => {
             </div>
             <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
                 <div class="theme-title mb-4">
-                <h6 className='aboutusTitle'>Why Web Development ?</h6>
+                <h6 className='aboutusTitle'>Why Choose Web Development?</h6>
                 </div>
-                <p class="mb-5 text-lg text-gray-400 paraAboutus">It allows you to create an online presence for your business and reach a wider audience. You can showcase your services or products, and provide customers with an easy way to learn about them. You can also create a platform for customer interaction and feedback. Having a website also helps to establish credibility and professionalism with potential customers and partners. Finally, website development can help you to build an effective marketing strategy, as well as track and measure the success of your campaigns.</p>
+                <p class="mb-5 text-lg text-gray-400 paraAboutus text-justify">Web development enables you to establish a robust online presence for your business, expanding your reach to a broader audience. Through your website, you can effectively showcase your services or products, offering customers a seamless way to explore and learn about them. Additionally, it provides a platform for customer interaction and feedback, fostering engagement and enhancing satisfaction.<br></br>Moreover, having a website contributes to establishing credibility and professionalism with potential customers and partners. It serves as a digital storefront, reflecting the integrity and reliability of your brand.<br></br>Furthermore, website development empowers you to build and execute an effective marketing strategy. With tools for tracking and measuring campaign success, you can refine your approach to maximize results and achieve your business objectives.</p>
             </div>
             </div>
         </div>
