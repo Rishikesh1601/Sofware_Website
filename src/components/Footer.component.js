@@ -15,12 +15,12 @@ const Footer = () => {
                     <p className="mb-0 text-lg">Office No 27, DNK Business Bay, Katraj – Kondhwa Rd,<br></br> Rajas Society, Katraj, Pune, Maharashtra 411046</p>
                   </li>
                   <li>
-                    <a href="mailto:info@dreamztechnology.com" className="text-blue-500 text-xl underline">
+                    <a href="mailto:info@dreamztechnology.com" className="text-blue-500 text-lg">
                     info@dreamztechnology.com
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+919960685666" className="text-blue-500 text-xl underline">
+                    <a href="tel:+919960685666" className="text-blue-500 text-lg">
                     +91 9960685666
                     </a>
                   </li>
@@ -143,7 +143,7 @@ const Footer = () => {
           <div className="container mx-auto">
             <div className="copyright">
               <div className="text-center py-4 copyrightTextForMobile">
-                Copyright 2023 Dreamz Software Solutions Pvt. Ltd., Pune | All Rights Reserved
+                Copyright 2023 Dreamz Software Solutions Pvt. Ltd.
               </div>
             </div>
           </div>
