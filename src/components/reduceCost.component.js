@@ -15,7 +15,7 @@ const ReduceCost = () => {
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Reduce Cost Build Faster</h6>
                 </div>
-                <p class="mb-5 text-lg text-gray-400 paraAboutus">API development is important because it enables companies to share data and services with other applications and users. APIs are essential for efficient and effective communication between different applications and services, allowing them to interact and exchange data in an organized and secure manner. They also help to streamline the development process by allowing developers to quickly and easily access the resources they need.</p>
+                <p class="mb-5 text-lg text-gray-400 paraAboutus  text-justify">API development is crucial for companies seeking to reduce costs and expedite development. APIs facilitate seamless data and service sharing among applications and users, fostering efficient communication. They enable organized and secure interaction and data exchange between different applications and services. Additionally, APIs streamline the development process by granting developers rapid and convenient access to necessary resources.</p>
             </div>
             </div>
         </div>

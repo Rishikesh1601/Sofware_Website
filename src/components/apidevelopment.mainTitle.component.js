@@ -25,7 +25,7 @@ const APIDevelopmentMainTitle = () => {
   API Development
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Dreamz API Development involves the development of an Application Program Interface (API) that provides third-party developers with access to the Dreamz platform. The API will allow developers to integrate their applications and services with Dreamz and enable customers to interact with the platform in a more efficient and secure manner. The API will enable developers to integrate their applications with Dreamz and provide customers with secure access to the services and features offered by Dreamz.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Dreamz API Development entails creating an Application Programming Interface (API) granting third-party developers access to the Dreamz platform. This API facilitates integration of developers' applications and services with Dreamz, enhancing customer interaction with the platform in a secure and efficient manner. Developers can seamlessly integrate their applications with Dreamz, ensuring customers have secure access to its services and features.</p>
                 </div>
                 </div>
             </div>
