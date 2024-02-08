@@ -13,9 +13,9 @@ const WhyMobileDevelopment = () => {
             </div>
             <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
                 <div class="theme-title mb-4">
-                <h6 className='aboutusTitle'>Why Mobile App Development ?</h6>
+                <h6 className='aboutusTitle'>Why Choose Mobile App Development?</h6>
                 </div>
-                <p class="mb-5 text-lg text-gray-400 paraAboutus">Mobile app development is becoming increasingly popular as more and more people are using mobile devices to access the internet. Mobile apps provide businesses with the opportunity to reach a larger audience, regardless of location. Mobile apps also make it easier for businesses to interact with customers, provide them with helpful information, and offer services or products. Additionally, the use of mobile apps can help enhance customer experience and loyalty, improve customer engagement, and drive sales.</p>
+                <p class="mb-5 text-lg text-gray-400 paraAboutus text-justify">The popularity of mobile app development is on the rise, fueled by the growing number of users accessing the internet through mobile devices. Mobile apps offer businesses a platform to expand their reach to a wider audience, irrespective of geographical boundaries. They facilitate seamless interaction with customers, providing valuable information and delivering services or products conveniently.<br></br>Moreover, mobile apps play a pivotal role in enhancing customer experience and fostering loyalty. By offering a personalized and user-friendly interface, businesses can improve engagement levels and drive sales effectively.</p>
             </div>
             </div>
         </div>

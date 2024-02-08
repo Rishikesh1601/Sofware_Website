@@ -18,22 +18,22 @@ const MobileAppCapabilities = () => {
     // You can customize this function to return different text for each button
     switch (index) {
       case 0:
-        return "Ecommerce app development is becoming increasingly popular for businesses looking to expand their reach and customer base. It allows customers to shop from anywhere, anytime, making shopping easier and more convenient. Additionally, ecommerce apps can provide businesses with a variety of features that can help increase sales and customer engagement, such as push notifications, loyalty programs, and secure payment processing.";
+        return "Ecommerce app development is gaining momentum among businesses seeking to broaden their reach and customer base. These apps enable customers to shop conveniently from anywhere, anytime, simplifying the shopping experience. Furthermore, ecommerce apps offer businesses a plethora of features, including push notifications, loyalty programs, and secure payment processing, to enhance sales and customer engagement effectively.";
       
       case 1:
-        return "The need for enterprise app development is growing as businesses are increasingly turning to mobile solutions to help streamline their processes, reduce operational costs, and improve customer experience. Enterprise apps can help streamline and automate processes, reducing manual labor and time spent on tasks, thereby improving efficiency. This can ultimately lead to increased productivity, reduced operational costs, and increased customer satisfaction. Enterprise apps can help facilitate communication between teams, departments, and customers. This can help to improve collaboration, leading to better customer service and increased customer satisfaction."
+        return "The demand for enterprise app development is surging as businesses increasingly adopt mobile solutions to streamline processes, cut operational costs, and enhance customer experience. These apps streamline and automate tasks, slashing manual labor and time expended, thereby boosting efficiency. Ultimately, this can translate into heightened productivity, lowered operational expenses, and heightened customer satisfaction."
       
       case 2:
-        return "Hybrid app development is a process of creating mobile applications that run on multiple platforms such as iOS, Android and Windows. Hybrid apps are basically web-based applications that are built using HTML, CSS and JavaScript and are then wrapped in a native container. The native container allows the app to access device features like GPS, camera, contacts, accelerometer and more."
+        return "Hybrid app development involves crafting mobile applications compatible with multiple platforms, including iOS, Android, and Windows. These apps are essentially web-based, constructed using HTML, CSS, and JavaScript, and enclosed within a native container. The native container grants access to device features such as GPS, camera, contacts, accelerometer, and others."
       
       case 3:
-        return "Cross-platform app development refers to the process of developing applications that can be used across multiple platforms, such as iOS, Android, and Windows. This type of development is often necessary to ensure that apps are accessible to the widest range of users possible. It can also reduce the need for multiple code bases and help streamline the development process."
+        return "Cross-platform app development involves creating applications compatible with various platforms like iOS, Android, and Windows. This approach ensures broad accessibility for users and minimizes the requirement for multiple code bases, thereby streamlining the development process."
       
       case 4:
-        return "PWA (Progressive Web Apps) are web applications that use modern web technologies and design principles to deliver a mobile app-like experience to users. These apps are designed to work on any device, including smartphones, tablets, and desktops, without any installation or downloads. They are built with technologies such as HTML, CSS, and JavaScript, and are typically hosted on a web server."
+        return "PWAs (Progressive Web Apps) leverage contemporary web technologies and design principles to provide users with an experience akin to mobile apps. They function seamlessly across devices like smartphones, tablets, and desktops, without requiring installation or downloads. PWAs are crafted using technologies like HTML, CSS, and JavaScript and are commonly hosted on web server."
       
       case 5:
-        return "Custom mobile app development is the process of creating a custom, tailored mobile application to meet the specific needs of a business or organization. Custom mobile apps can include anything from customer relationship management (CRM) tools, to eCommerce platforms, to productivity apps, to data-tracking and analytics tools, and more. These apps are typically developed for use on a variety of mobile devices and operating systems, such as iOS, Android, and Windows."
+        return "Custom mobile app development involves crafting bespoke mobile applications precisely tailored to the unique requirements of a business or organization. These apps can encompass a wide array of functionalities, including customer relationship management (CRM), eCommerce platforms, productivity tools, data tracking, and analytics solutions, among others. Developed for compatibility across various mobile devices and operating systems like iOS, Android, and Windows, custom mobile apps are designed to address specific business needs effectively."
       
       default:
       return '';

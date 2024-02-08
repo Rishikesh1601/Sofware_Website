@@ -24,7 +24,7 @@ const MobileDevelopmentMainTitle = () => {
   Mobile App Development
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz Mobile app development is the process of creating software applications that run on a mobile device, such as a smartphone, tablet, or wearable device. Mobile app development can range from the development of a simple single-page app to complex, multi-page apps. Mobile apps are typically written in a programming language suitable for the device they are designed for, such as Objective-C or Java for iOS and Android, respectively.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, Mobile App Development involves crafting software applications tailored for mobile devices like smartphones, tablets, or wearables. From simple single-page apps to intricate, multi-page ones, the spectrum of mobile app development is vast. These apps are usually coded in platform-specific languages such as Objective-C or Java for iOS and Android, respectively, to optimize performance and functionality.</p>
                 </div>
                 </div>
             </div>
