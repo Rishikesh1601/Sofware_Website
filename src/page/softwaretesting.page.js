@@ -13,6 +13,7 @@ const SoftwareTestingPage = () => {
         <>
         <Navbar />
         <SoftwareTestingMainTitle />
+        <br></br>
         <WhySoftwareTesting />
         <br></br>
         <br></br>

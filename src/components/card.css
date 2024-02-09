@@ -152,7 +152,7 @@ h2 {
         font-size: 29px !important;
     }
     .paraAboutus{
-        text-align: justify;
+        text-align: justify !important;
     }
     .arrow.next{
         margin-top:25px;
@@ -169,5 +169,9 @@ h2 {
     .sliderComponentForMobile{
         width:95% !important;
         margin-left:10px !important;
+    }
+    .whyWebDevText{
+        margin-left:12px;
+        text-align: justify;
     }
 }

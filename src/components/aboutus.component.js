@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as AboutUsPng } from '../assets/aboutuspage.svg';
+import { ReactComponent as AboutUsPng } from '../assets/Images/about us.svg';
 import './card.css'
 function AboutusComponent() {
   return (

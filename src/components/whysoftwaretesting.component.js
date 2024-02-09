@@ -1,6 +1,6 @@
 import React from 'react'
 // import { ReactComponent as AboutUsPng } from '../assets/aboutuspage.svg';
-import { ReactComponent as WhyCustomSoftwareji } from '../assets/WhyCustomSoftware.svg';
+import { ReactComponent as WhyCustomSoftwareji } from '../assets/Images/why software testing.svg';
 import './card.css'
 const WhySoftwareTesting = () => {
   return (
@@ -11,7 +11,7 @@ const WhySoftwareTesting = () => {
             <div class="lg:w-1/2 md:w-full">
                 <WhyCustomSoftwareji className='w-full h-96'/>
             </div>
-            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
+            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 -ms-24 whyWebDevText">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Why is Quality Assurance Important?</h6>
                 </div>

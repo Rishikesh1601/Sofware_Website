@@ -4,7 +4,7 @@ import './navbar.css'
 // import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg';
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
-import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
+import {ReactComponent as SoftwareTest} from '../assets/Images/software testing.svg';
 const SoftwareTestingMainTitle = () => {
     
     return(
@@ -15,7 +15,7 @@ const SoftwareTestingMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="mt-7 rounded box-shadow relative ">
-                        <SoftwareTest className="w-96 h-auto heropngEdit"/>
+                        <SoftwareTest className="w-102 h-96 -mt-11 heropngEdit HeroImageTestingMAin"/>
                     </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ const SoftwareTestingMainTitle = () => {
   Software Testing
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we are a quality assurance company specializing in comprehensive and cost-effective software testing services. Our experienced professionals utilize the latest tools and techniques to ensure the software under scrutiny meets the highest quality standards. Our offerings span functional testing, performance testing, usability testing, security testing, compatibility testing, automation testing, and more. Committed to aiding our clients in achieving their business objectives, we deliver top-notch software testing services in Pune and worldwide.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow sm:text-justify">At Dreamz, we are a quality assurance company specializing in comprehensive and cost-effective software testing services. Our experienced professionals utilize the latest tools and techniques to ensure the software under scrutiny meets the highest quality standards. Our offerings span functional testing, performance testing, usability testing, security testing, compatibility testing, automation testing, and more. Committed to aiding our clients in achieving their business objectives, we deliver top-notch software testing services in Pune and worldwide.</p>
                 </div>
                 </div>
             </div>

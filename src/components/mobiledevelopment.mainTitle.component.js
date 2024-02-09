@@ -3,7 +3,7 @@ import './navbar.css'
 // import { ReactComponent as Heropng } from '../assets/heropage.svg';
 // import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg';
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
-import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
+import {ReactComponent as MobileDev} from '../assets/Images/mobile development.svg';
 const MobileDevelopmentMainTitle = () => {
     
     return(
@@ -14,7 +14,7 @@ const MobileDevelopmentMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <MobileDev className="w-96 h-auto heropngEdit1"/>
+                        <MobileDev className="w-96 h-auto heropngEdit -mt-7"/>
                     </div>
                     </div>
                 </div>

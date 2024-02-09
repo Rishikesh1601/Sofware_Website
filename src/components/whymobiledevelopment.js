@@ -1,6 +1,6 @@
 import React from 'react'
 // import { ReactComponent as AboutUsPng } from '../assets/aboutuspage.svg';
-import { ReactComponent as WhyCustomSoftwareji } from '../assets/WhyCustomSoftware.svg';
+import { ReactComponent as WhyCustomSoftwareji } from '../assets/Images/why.svg';
 import './card.css'
 const WhyMobileDevelopment = () => {
   return (
@@ -11,7 +11,7 @@ const WhyMobileDevelopment = () => {
             <div class="lg:w-1/2 md:w-full">
                 <WhyCustomSoftwareji className='w-full h-96'/>
             </div>
-            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
+            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 -ms-11 whyWebDevText">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Why Choose Mobile App Development?</h6>
                 </div>

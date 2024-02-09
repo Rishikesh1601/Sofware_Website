@@ -13,6 +13,7 @@ const MobileDevelopmentPage = () => {
         <>
         <Navbar />
         <MobileDevelopmentMainTitle />
+        <br></br>
         <WhyMobileDevelopment />
         <br></br>
         <br></br>

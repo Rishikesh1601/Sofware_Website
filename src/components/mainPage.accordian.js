@@ -32,7 +32,7 @@ const Accordion = () => {
   return (
     <>
     <div className='theme-title  ms-5 flex items-center justify-center'>
-        <h6 className='aboutusTitle'>A COMPREHENSIVE SUITE OF END TO END ENGINEERING</h6>
+        <h6 className='aboutusTitle offers'>A COMPREHENSIVE SUITE OF END TO END ENGINEERING</h6>
     </div>
     <div className="accordion-container">
       <div className="accordion-buttons">

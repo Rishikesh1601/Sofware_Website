@@ -25,7 +25,7 @@ class CompaniesSlider extends Component {
     var settings = {
       infinite: true,
       speed: 500,
-      slidesToShow: 6,
+      slidesToShow: 7,
       slidesToScroll: 1,
       initialSlide: 0,
       // nextArrow: <NextArrow />,

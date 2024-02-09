@@ -2,7 +2,7 @@ import React from "react";
 import './navbar.css'
 // import { ReactComponent as Heropng } from '../assets/heropage.svg';
 // import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg';
-import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
+import { ReactComponent as WebSiteDev} from '../assets/Images/website development.svg';
 const WebsiteDevelopmentMainTitle = () => {
     
     return(
@@ -13,7 +13,7 @@ const WebsiteDevelopmentMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <WebSiteDev className="w-96 h-auto heropngEdit"/>
+                        <WebSiteDev className="w-102 h-96 heropngEdit WebDevHeroCompo -ms-4 -mt-4 "/>
                     </div>
                     </div>
                 </div>

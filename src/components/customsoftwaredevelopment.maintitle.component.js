@@ -1,7 +1,7 @@
 import React from "react";
 import './navbar.css'
 // import { ReactComponent as Heropng } from '../assets/heropage.svg';
-import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg'
+import {ReactComponent as CustomSoftwareTitle} from '../assets/Images/custom software development.svg'
 const CustomSoftwareDevelopmentMainTitle = () => {
     
     return(
@@ -12,7 +12,7 @@ const CustomSoftwareDevelopmentMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <CustomSoftwareTitle className="w-96 h-auto heropngEdit"/>
+                        <CustomSoftwareTitle className="w-96 h-auto heropngEdit -mt-8"/>
                     </div>
                     </div>
                 </div>
