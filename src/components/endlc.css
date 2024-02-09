@@ -35,7 +35,7 @@
     background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
     -webkit-background-clip: text;
     color: transparent;
-    display: inline-block;
+    display: flex;
     text-align: center !important;
     
   }

@@ -8,7 +8,8 @@ import CounterComponent from '../components/Counter.component';
 import OurProjectComponent from '../components/OurProject.component';
 import CompaniesSlider from '../components/Companiesslider';
 import Footer from '../components/Footer.component';
-import EndLC from '../components/endLC';
+// import EndLC from '../components/endLC';
+import Accordion from '../components/mainPage.accordian';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,8 @@ const HomePage = () => {
     <br></br>
     <br></br>
     {/* <EndToEndComponent /> */}
-    <EndLC />
+    {/* <EndLC /> */}
+    <Accordion />
     <br></br>
     <br></br>
     <TeamAgumentation />

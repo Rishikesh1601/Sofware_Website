@@ -18,10 +18,8 @@ const EndLC = () => {
 
   return (
     <div>
-        <div class="theme-title mb-4 ms-5 flex items-center justify-center">
-            <h6 className='aboutusTitle'>A COMPREHENSIVE SUITE OF End to End Engineering</h6>
-        </div>
-    <div className="sdlc-card-container">
+        
+    <div className="sdlc-card-container ms-7 me-7">
       {cardData.map((card, index) => (
         <EndLCCardComponent key={index} {...card} />
       ))}
