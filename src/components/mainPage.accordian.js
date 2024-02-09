@@ -3,6 +3,8 @@ import EndLC from './endLC';
 // import IndustryComponent from './IndustryComponent';
 // import TechnologiesComponent from './TechnologiesComponent';
 import './accordian.css'
+import IndustryLC from './industryLC';
+import TechnologyLC from './technologyLC';
 
 const Accordion = () => {
   const [servicesOpen, setServicesOpen] = useState(true); // Open by default
@@ -40,8 +42,8 @@ const Accordion = () => {
       </div>
       <div className="accordion-components">
         {servicesOpen && <EndLC />}
-        {industryOpen && <EndLC />}
-        {technologiesOpen && <EndLC />}
+        {industryOpen && <IndustryLC />}
+        {technologiesOpen && <TechnologyLC />}
       </div>
     </div>
     </>
