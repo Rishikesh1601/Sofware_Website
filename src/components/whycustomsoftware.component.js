@@ -11,7 +11,7 @@ const WhyCustomSoftware = () => {
             <div class="lg:w-1/2 md:w-full">
                 <WhyCustomSoftwareji className='w-full h-96'/>
             </div>
-            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 lg:-ms-11">
+            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 ">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Why Custom Software Development ?</h6>
                 </div>

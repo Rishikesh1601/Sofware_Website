@@ -11,7 +11,7 @@ const WhyWebDevelopment = () => {
             <div class="lg:w-1/2 md:w-full">
                 <WhyCustomSoftwareji className='w-full h-96'/>
             </div>
-            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 -ms-11 whyWebDevText">
+            <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10 whyWebDevText">
                 <div class="theme-title mb-4">
                 <h6 className='aboutusTitle'>Why Choose Web Development?</h6>
                 </div>

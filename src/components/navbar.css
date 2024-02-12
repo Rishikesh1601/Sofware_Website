@@ -20,7 +20,14 @@
   z-index: 1000;
   transition: background-color 0.3s ease;
 }
-
+.mainlogo{
+  margin-left:67px;
+}
+@media(max-width:768px){
+  .mainlogo{
+    margin-left:0px;
+  }
+}
 /* Fixed header style */
 #myHead.fixed {
   background-color: #fff;
