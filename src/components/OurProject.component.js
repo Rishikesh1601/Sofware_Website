@@ -60,7 +60,7 @@ const settings = {
         <div class="theme-title z-index-1">
           <h6 className='text-center'>Best Software Solutions Developed by Dreamz</h6>
         </div>
-      <div className="container mt-11">
+      <div className="container mt-11 reactSliderEdit">
         <Slider {...settings}>
           {items.map((item, index) => (
             <OurProjectCard key={index} {...item} />

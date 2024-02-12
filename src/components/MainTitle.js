@@ -18,7 +18,7 @@ const MainTitle = () => {
     return(
         <>
             <section class="banner-2 grediant-bg2">
-            <div class="container">
+            <div class="">
                 <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">

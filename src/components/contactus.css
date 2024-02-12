@@ -11,9 +11,10 @@
 
 .makeitaround{
     display: flex;
-    flex-wrap: nowrap !important;
-    justify-content: space-around;
-    width:max-content;
+    flex-wrap: wrap !important;
+    justify-content: normal;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 @media(max-width:768px){

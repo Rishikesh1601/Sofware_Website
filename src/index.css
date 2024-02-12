@@ -12,10 +12,20 @@ body {
 }
 @media(max-width:1380px){
   body{
-    zoom:0.8;
+    zoom:0.9;
+  }
+  .homePageMainText{
+    width:max-content;
+    margin-left:25px;
   }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  max-width:max-content;
+}
+.text-justify{
+  text-align: justify !important;
 }
