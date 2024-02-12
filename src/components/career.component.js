@@ -155,7 +155,7 @@ const CareerComponent = () => {
             enctype="multipart/form-data"
           >
             <label class="block mb-6">
-              <span class="text-gray-700">Your name</span>
+              <span class="text-gray-700 careerText">Your name</span>
               <input
                 required
                 name="name"
@@ -176,7 +176,7 @@ const CareerComponent = () => {
               />
             </label>
             <label class="block mb-6">
-              <span class="text-gray-700">Email address</span>
+              <span class="text-gray-700 careerText">Email address</span>
               <input
                 required
                 name="email"
@@ -197,7 +197,7 @@ const CareerComponent = () => {
               />
             </label>
             <label class="block mb-6">
-              <span class="text-gray-700">Years of experience</span>
+              <span class="text-gray-700 careerText">Years of experience</span>
               <select
                 required
                 name="experience"
@@ -223,7 +223,7 @@ const CareerComponent = () => {
               </select>
             </label>
             <label class="block mb-6">
-              <span class="text-gray-700">Tell us more about yourself</span>
+              <span class="text-gray-700 careerText">Tell us more about yourself</span>
               <textarea
                 name="message"
                 class="
@@ -243,7 +243,7 @@ const CareerComponent = () => {
               ></textarea>
             </label>
             <label class="block mb-6">
-              <span class="text-gray-700">Your CV</span>
+              <span class="text-gray-700 careerText">Your CV</span>
               <input
                 required
                 name="cv"
@@ -280,7 +280,7 @@ const CareerComponent = () => {
                       "
                       checked
                     />
-                    <span class="ml-2">You'd like to work remotely</span>
+                    <span class="ml-2 careerText">You'd like to work remotely</span>
                   </label>
                 </div>
                 <div>
@@ -301,7 +301,7 @@ const CareerComponent = () => {
                         focus:ring-opacity-50
                       "
                     />
-                    <span class="ml-2">You'd prefer to work onsite</span>
+                    <span class="ml-2 careerText">You'd prefer to work onsite</span>
                   </label>
                 </div>
               </div>

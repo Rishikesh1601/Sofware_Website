@@ -6,7 +6,7 @@ const OurProjectCard = ({ title, img}) => {
   return (
     <div className="featured-item style-3 text-center mx-5 mb-4">
       <div className="featured-img">
-        <img src={img} alt='our_project' className='h-30 w-full' />
+        <img src={img} alt='our_project' className='h-48 w-full' />
       </div>
       <div className="featured-desc">
         <div className="featured-title">

@@ -52,6 +52,10 @@
     gap: 40px;
     position: relative;
   }
+  .careerText{
+    color:black !important;
+    -webkit-text-fill-color: black;
+  }
 
   @media(max-width:768px){
     .edit-this-career-component{

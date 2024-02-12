@@ -109,7 +109,8 @@ h2 {
         width:226px;
     }
     .text-justify{
-        text-align: center !important;
+        text-align: justify !important;
+        margin-left:15px;
     }
     .arrow.next{
         background-color: gray;
@@ -153,6 +154,7 @@ h2 {
     }
     .paraAboutus{
         text-align: justify !important;
+        margin-left:0px;
     }
     .arrow.next{
         margin-top:25px;
@@ -173,5 +175,11 @@ h2 {
     .whyWebDevText{
         margin-left:12px;
         text-align: justify;
+    }
+    .aboutUsCardMob{
+        width: 120%;
+        left: -13px;
+        position: relative;
+        height: max-content;
     }
 }

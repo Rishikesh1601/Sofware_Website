@@ -9,7 +9,7 @@ function AboutusComponent() {
         <div class="container">
             <div class="flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 md:w-full">
-                <AboutUsPng className='w-full h-96'/>
+                <AboutUsPng className='w-full h-96 aboutUsCardMob'/>
             </div>
             <div class="lg:w-1/2 md:w-full mt-6 lg:mt-0 lg:pl-10">
                 <div class="theme-title mb-4">
