@@ -13,6 +13,7 @@ const DevOpsPage = () => {
         <>
         <Navbar />
         <DevOpsMainTitle />
+        <br></br>
         <WhyDevops />
         <br></br>
         <br></br>

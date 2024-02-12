@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as ItOps} from '../assets/itops.svg'
+import {ReactComponent as ItOps} from '../assets/Images/itops.svg'
 const ITopsMainTitle = () => {
     
     return(
@@ -16,7 +16,7 @@ const ITopsMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class=" rounded box-shadow relative ">
-                        <ItOps className="w-96 h-auto heropngEdit"/>
+                        <ItOps className="w-96 h-auto heropngEdit -mt-12"/>
                     </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const ITopsMainTitle = () => {
   Information Technology Operations
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">A Dreamz Information technology operations includes the operations of the computers and networks used by a business or organization. It includes things such as setting up and maintaining the computers and networks, managing the data and software, and maintaining security.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, our Information Technology Operations encompass the management of computers and networks crucial to business operations. Our services entail the setup, maintenance, and optimization of systems, alongside data and software management, ensuring seamless functionality and security. With a commitment to excellence, we empower businesses to harness the full potential of their IT infrastructure for enhanced productivity and growth.</p>
                 </div>
                 </div>
             </div>

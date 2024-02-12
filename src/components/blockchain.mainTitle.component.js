@@ -6,7 +6,7 @@ import './navbar.css'
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
 // import {ReactComponent as AiOps} from '../assets/aiops.svg'
-import {ReactComponent as BlockChain} from '../assets/Blockchaindev.svg'
+import {ReactComponent as BlockChain} from '../assets/Images/blockchain main title.svg'
 const BlockChainMainTitle = () => {
     
     return(
@@ -17,7 +17,7 @@ const BlockChainMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="mt-7 rounded box-shadow relative ">
-                        <BlockChain className="w-96 h-auto heropngEdit"/>
+                        <BlockChain className="w-96 h-auto heropngEdit -mt-12"/>
                     </div>
                     </div>
                 </div>

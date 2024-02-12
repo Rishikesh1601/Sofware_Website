@@ -25,7 +25,7 @@ const SoftwareTestingMainTitle = () => {
   Software Testing
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow sm:text-justify">At Dreamz, we are a quality assurance company specializing in comprehensive and cost-effective software testing services. Our experienced professionals utilize the latest tools and techniques to ensure the software under scrutiny meets the highest quality standards. Our offerings span functional testing, performance testing, usability testing, security testing, compatibility testing, automation testing, and more. Committed to aiding our clients in achieving their business objectives, we deliver top-notch software testing services in Pune and worldwide.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we are a quality assurance company specializing in comprehensive and cost-effective software testing services. Our experienced professionals utilize the latest tools and techniques to ensure the software under scrutiny meets the highest quality standards. Our offerings span functional testing, performance testing, usability testing, security testing, compatibility testing, automation testing, and more. Committed to aiding our clients in achieving their business objectives, we deliver top-notch software testing services in Pune and worldwide.</p>
                 </div>
                 </div>
             </div>

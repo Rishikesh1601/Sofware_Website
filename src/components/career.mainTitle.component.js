@@ -6,7 +6,7 @@ import './navbar.css'
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
 // import {ReactComponent as AiOps} from '../assets/aiops.svg'
-import {ReactComponent as Care} from '../assets/career.svg';
+import {ReactComponent as Care} from '../assets/Images/career.svg';
 const CareerMainTitle = () => {
     
     return(
@@ -17,7 +17,7 @@ const CareerMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="mt-7 rounded box-shadow relative ">
-                        <Care className="w-96 h-auto heropngEdit"/>
+                        <Care className="w-96 h-auto heropngEdit -mt-12 "/>
                     </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const CareerMainTitle = () => {
   Life at Dreamz
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we believe that everyone deserves the opportunity to reach their full potential and achieve their dream career. That is why we are committed to helping individuals find meaningful employment and advance their careers through our innovative job search platform. We are committed to building a diverse and inclusive workforce. We believe that everyone should have an equal opportunity to pursue their dreams and make their mark in the world. We strive to create an environment where everyone feels valued and respected.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Experience Life at Dreamz, where we're dedicated to fostering career growth and empowerment for all. Our innovative job search platform connects individuals with meaningful employment opportunities, empowering them to pursue their dream careers. Committed to diversity and inclusion, we believe in equal opportunities for all to thrive and make a difference. At Dreamz, we cultivate an environment where everyone is valued and respected, driving success through collaboration and mutual respect.</p>
                 </div>
                 </div>
             </div>

@@ -14,6 +14,7 @@ const ApiDevelopmentPage = () => {
         <>
         <Navbar />
         <APIDevelopmentMainTitle />
+        <br></br>
         <ReduceCost />
         <br></br>
         <br></br>

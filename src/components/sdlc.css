@@ -45,13 +45,13 @@
     font-size:30px !important;
     background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
     -webkit-background-clip: text;
-    color: transparent;
+    color: black;
     display: inline-block;
     
   }
   
   .sdlc-para {
-    color: #555;
+    color: #000000;
     text-align: justify;
   }
 

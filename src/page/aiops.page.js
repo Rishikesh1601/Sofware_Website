@@ -12,6 +12,7 @@ const AiopsPage = () => {
         <>
         <Navbar />
         <AIopsMainTitle />
+        <br></br>
         <DecisionMaking />
         <br></br>
         <br></br>

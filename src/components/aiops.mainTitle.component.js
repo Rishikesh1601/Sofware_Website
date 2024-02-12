@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as AiOps} from '../assets/aiops.svg'
+import {ReactComponent as AiOps} from '../assets/Images/aiops.svg'
 const AIopsMainTitle = () => {
     
     return(
@@ -16,7 +16,7 @@ const AIopsMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="mt-7 rounded box-shadow relative ">
-                        <AiOps className="w-96 h-auto heropngEdit"/>
+                        <AiOps className="w-96 h-auto heropngEdit -mt-11"/>
                     </div>
                     </div>
                 </div>

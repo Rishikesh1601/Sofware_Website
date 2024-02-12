@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as AboutUs} from '../assets/aboutMainTitle.svg'
+import {ReactComponent as AboutUs} from '../assets/Images/aboutus main title.svg'
 const AboutUsMainTitle = () => {
     
     return(
@@ -16,7 +16,7 @@ const AboutUsMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <AboutUs className="w-96 h-auto heropngEdit"/>
+                        <AboutUs className="w-96 h-auto heropngEdit -mt-12"/>
                     </div>
                     </div>
                 </div>
@@ -26,9 +26,8 @@ const AboutUsMainTitle = () => {
   About Us
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">
-Dreamz stands as a preeminent end-to-end product engineering company based in India. Renowned for our commitment to excellence, we specialize in providing cost-effective and tailor-made solutions across various domains, including standalone website development, digital marketing, mainframe web design, and comprehensive development services for businesses.</p>
-                </div>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Dreamz is a leading end-to-end product engineering company headquartered in India, renowned for our unwavering commitment to excellence. Specializing in cost-effective and customized solutions, we cater to diverse domains, offering standalone website development, digital marketing services, mainframe web design, and comprehensive development solutions for businesses. With a focus on innovation and quality, we empower businesses to thrive in today's dynamic market landscape.</p>
+               </div>
                 </div>
             </div>
             <div class="wave-shape">

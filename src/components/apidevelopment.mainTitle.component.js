@@ -4,7 +4,7 @@ import './navbar.css'
 // import {ReactComponent as CustomSoftwareTitle} from '../assets/CustomSoftwareTitle.svg';
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
-import {ReactComponent as ApiDev} from '../assets/apiDevelopment.svg'
+import {ReactComponent as ApiDev} from '../assets/Images/api.svg'
 const APIDevelopmentMainTitle = () => {
     
     return(
@@ -15,7 +15,7 @@ const APIDevelopmentMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <ApiDev className="w-96 h-auto heropngEdit"/>
+                        <ApiDev className="w-96 h-auto heropngEdit -mt-11 HeroImageTestingMAin"/>
                     </div>
                     </div>
                 </div>

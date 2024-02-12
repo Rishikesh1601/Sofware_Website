@@ -6,7 +6,7 @@ import './navbar.css'
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
 // import {ReactComponent as ItOps} from '../assets/itops.svg'
-import {ReactComponent as Trustedclient} from '../assets/trusted clients.svg';
+import {ReactComponent as Trustedclient} from '../assets/Images/clients.svg';
 const TrustedClientsMainTitle = () => {
     
     return(
@@ -27,7 +27,7 @@ const TrustedClientsMainTitle = () => {
   Our Trusted Clients
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-xl mb-5 animate__animated animate__zoomIn animate__slow">We have had the privilege to work with some amazing clients over the years, ranging from large companies to smaller local businesses. </p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-xl mb-5 animate__animated animate__zoomIn animate__slow">Dreamz is proud to have collaborated with an array of esteemed clients, spanning from multinational corporations to small-scale local enterprises. Our diverse portfolio showcases our versatility and commitment to delivering exceptional results across different industries and scales of operation.</p>
                 </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as DevOps} from '../assets/devOps.svg'
+import {ReactComponent as DevOps} from '../assets/Images/devops.svg'
 const DevOpsMainTitle = () => {
     
     return(
@@ -16,7 +16,7 @@ const DevOpsMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="mt-7 rounded box-shadow relative ">
-                        <DevOps className="w-96 h-auto heropngEdit1"/>
+                        <DevOps className="w-96 h-auto heropngEdit -mt-12"/>
                     </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const DevOpsMainTitle = () => {
   DevOps Services
   </span>
 </h1>
-                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">At Dreamz, we offer comprehensive DevOps services to help our clients achieve their desired business outcomes. We have a dedicated team of DevOps professionals who are well-versed in the latest tools and technologies and can help our clients to implement DevOps solutions for their businesses.</p>
+                    <p class="text-gray-600 font-bold text-justify ms-11 text-lg mb-5 animate__animated animate__zoomIn animate__slow">Dreamz offers expert DevOps services designed to optimize business outcomes. Our skilled team of DevOps professionals specializes in cutting-edge tools and technologies, delivering tailored solutions for streamlined processes and enhanced collaboration. From development pipeline optimization to deployment automation, we empower businesses to thrive in today's fast-paced digital landscape. Partner with us to unlock the full potential of DevOps and drive innovation in your organization.</p>
                 </div>
                 </div>
             </div>
