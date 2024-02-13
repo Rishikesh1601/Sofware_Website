@@ -11,7 +11,7 @@ const Footer = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:3001/api/send-email", { email });
+      const response = await axios.post("http://localhost:3001/api/send-quote-email", { email });
       if (response.status === 200 && response.data.success) {
         setSuccessMessage('Quote requested successfully. We will contact you soon.');
         setEmail('');

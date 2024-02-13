@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
 import './contactus.css'
 
 const ContactUs = () => {
+  const onChange = () =>{
+
+  }
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:3001/api/send-contact-email', formData);
+      alert('We will reach out to you soon!');
+      // Optionally, you can redirect the user or perform any other actions after sending the email
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send email');
+    }
+  };
   return (
     <div className="container mt-32 mx-auto px-2 md:px-4 contactusedit">
 
@@ -17,43 +44,72 @@ const ContactUs = () => {
 
         <div className="flex flex-wrap items-center justify-around makeitaround">
 
-          <form action="mailto:info@example.com" method="post" encType="text/plain" className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+        <form onSubmit={handleSubmit} className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+          <div className="mb-3 w-full">
+            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="name">
+              Name
+            </label>
+            <input
+              type="text"
+              className="px-2 py-2 border w-full outline-none rounded-md"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+            />
+          </div>
 
-            <div className="mb-3 w-full">
-              <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
-                Name
-              </label>
-              <input type="text" className="px-2 py-2 border w-full outline-none rounded-md" id="exampleInput90" placeholder="Name" />
-            </div>
+          <div className="mb-3 w-full">
+            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="email">
+              Email
+            </label>
+            <input
+              type="email"
+              className="px-2 py-2 border w-full outline-none rounded-md"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email address"
+            />
+          </div>
 
-            <div className="mb-3 w-full">
-              <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
-                Email
-              </label>
-              <input type="email" className="px-2 py-2 border w-full outline-none rounded-md" id="exampleInput90"
-                placeholder="Enter your email address" />
-            </div>
-            <div className="mb-3 w-full">
-              <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
-                Phone Number
-              </label>
-              <input type="tel" className="px-2 py-2 border w-full outline-none rounded-md" id="exampleInput90"
-                placeholder="Enter Phone Number" />
-            </div>
+          <div className="mb-3 w-full">
+            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="phoneNumber">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              className="px-2 py-2 border w-full outline-none rounded-md"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              placeholder="Enter Phone Number"
+            />
+          </div>
 
-            <div className="mb-3 w-full">
-              <label className="block font-medium mb-[2px] text-teal-700" htmlFor="exampleInput90">
-                Message
-              </label>
-              <textarea className="px-2 py-2 border rounded-[5px] w-full outline-none" name="" id=""></textarea>
-            </div>
+          <div className="mb-3 w-full">
+            <label className="block font-medium mb-[2px] text-teal-700" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="px-2 py-2 border rounded-[5px] w-full outline-none"
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
 
-            <button type="submit"
-              className="mb-6 inline-block w-full rounded buttonaboutus">
-              Send
-            </button>
+          <ReCAPTCHA sitekey="6Lcyz-gkAAAAACP3J0V7WI386_8Rs77SW7ZDbCqG" onChange={onChange} />
 
-          </form>
+          <button type="submit" className="mb-6 inline-block w-full rounded buttonaboutus">
+            Send
+          </button>
+        </form>
 
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-1/2">
             <iframe className='w-full manageIframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15139.05542243947!2d73.8687765!3d18.449028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91fd5c6d489%3A0x954fefd0b60cba12!2sDreamz%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1681883790875!5m2!1sen!2sin" width="100&amp;" height="250" allowFullScreen></iframe>

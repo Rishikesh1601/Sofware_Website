@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import axios from 'axios';
 import "./CareerComponent.css"; // Import a separate CSS file for styling
 
 const CareerComponent = () => {
@@ -37,6 +38,45 @@ const CareerComponent = () => {
         break;
     }
   };
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    experience: 'Less than a year',
+    message: '',
+    cv: null,
+    remote: true,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, files } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === 'file' ? files[0] : value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formDataToSend = new FormData();
+    for (const key in formData) {
+      formDataToSend.append(key, formData[key]);
+    }
+
+    try {
+      await axios.post('http://localhost:3001/api/send-career-application', formDataToSend, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      console.log('Career application submitted successfully');
+      // Optionally, you can redirect the user or show a success message
+    } catch (error) {
+      console.error('Error submitting career application:', error);
+      // Handle error, show error message, etc.
+    }
+  };
+
+  
 
   return (
     <>
@@ -149,11 +189,7 @@ const CareerComponent = () => {
 
           <div class="w-full md:w-96 md:max-w-full mx-auto">
         <div class="p-6 border border-gray-300 sm:rounded-md">
-          <form
-            method="POST"
-            action="https://herotofu.com/start"
-            enctype="multipart/form-data"
-          >
+          <form onSubmit={handleSubmit}>
             <label class="block mb-6">
               <span class="text-gray-700 careerText">Your name</span>
               <input
@@ -172,7 +208,8 @@ const CareerComponent = () => {
                   focus:ring-indigo-200
                   focus:ring-opacity-50
                 "
-                placeholder="Joe Bloggs"
+                placeholder="Enter Your Name"
+                onChange={handleChange}
               />
             </label>
             <label class="block mb-6">
@@ -193,7 +230,8 @@ const CareerComponent = () => {
                   focus:ring-indigo-200
                   focus:ring-opacity-50
                 "
-                placeholder="joe.bloggs@example.com"
+                placeholder="Enter Email Address"
+                onChange={handleChange}
               />
             </label>
             <label class="block mb-6">
@@ -201,6 +239,7 @@ const CareerComponent = () => {
               <select
                 required
                 name="experience"
+                onChange={handleChange}
                 class="
                   block
                   w-full
@@ -226,6 +265,7 @@ const CareerComponent = () => {
               <span class="text-gray-700 careerText">Tell us more about yourself</span>
               <textarea
                 name="message"
+                onChange={handleChange}
                 class="
                   block
                   w-full
@@ -248,6 +288,7 @@ const CareerComponent = () => {
                 required
                 name="cv"
                 type="file"
+                onChange={handleChange}
                 class="
                   block
                   w-full
@@ -266,6 +307,7 @@ const CareerComponent = () => {
                     <input
                       name="remote"
                       value="yes"
+                      onChange={handleChange}
                       type="radio"
                       class="
                         text-indigo-600
@@ -288,6 +330,7 @@ const CareerComponent = () => {
                     <input
                       name="re"
                       value="no"
+                      onChange={handleChange}
                       type="radio"
                       class="
                         text-indigo-600
