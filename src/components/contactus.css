@@ -45,3 +45,31 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+.heading-pr{
+    font-family: sans-serif;
+}
+
+.content-pr{
+    font-family: sans-serif;
+}
+
+@media(max-width:768px){
+    .pr{
+        margin-top: 10px;
+    }
+    .faq-pr{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .content-pr{
+        text-align: start;
+        font-size: medium;
+    }
+    .heading-pr{
+        text-align: start;
+        font-size: large;
+    }
+}

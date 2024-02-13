@@ -15,6 +15,9 @@ import ContactUsPage from './page/contactus.page';
 import TrustedClientsPage from './page/trustedclients.page';
 import CareerPage from './page/career.page';
 import AboutUsPage from './page/aboutus.page';
+// import Privacy from './components/privacy';
+import PrivacyPage from './page/privacy.page';
+import TermsPage from './page/terms.page';
 
 function App() {
   return (
@@ -35,6 +38,8 @@ function App() {
         <Route path="/trusted clients" element={<TrustedClientsPage />} />
         <Route path="/career" element={<CareerPage />} />
         <Route path="/aboutUs" element={<AboutUsPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
       </Routes>
     </Router>
     </>

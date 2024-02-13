@@ -21,7 +21,7 @@ import {
   AcademicCapIcon,
 
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon} from '@heroicons/react/20/solid'
+import { ChevronDownIcon, CursorArrowRippleIcon} from '@heroicons/react/20/solid'
 
 const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
@@ -37,8 +37,9 @@ const products = [
   { name: 'ITops',  href: '/itops', icon: ArrowTrendingUpIcon },
 ]
 const aboutus = [
+  { name: 'About Us',  href: '/aboutUs', icon: CursorArrowRippleIcon },
   { name: 'Our Trusted Clients', href: '/trusted clients', icon: UserGroupIcon },
-  { name: 'Career',  href: '/career', icon: AcademicCapIcon },
+  
 ]
 
 
@@ -125,7 +126,7 @@ const Navbar = () => {
           </Popover>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
-              End to End Product Engineering
+              Product Engineering
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -167,12 +168,13 @@ const Navbar = () => {
           {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Technology
           </a> */}
-          <a href="/contactus" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
-            Contact Us
+          
+          <a href="/career" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+            Career
           </a>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
-              About Us
+              About
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -209,6 +211,9 @@ const Navbar = () => {
               </Popover.Panel>
             </Transition>
           </Popover>
+          <a href="/contactus" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+            Contact Us
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end socialIcon">
         <div class="card">
@@ -310,17 +315,18 @@ const Navbar = () => {
                 >
                   Technology
                 </a> */}
+                
                 <a
-                  href="/contactus"
+                  href="/career"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact Us
+                  Career
                 </a>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        About Us
+                        About
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -341,15 +347,14 @@ const Navbar = () => {
                     </>
                   )}
                 </Disclosure>
-              </div>
-              <div className="py-6">
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  href="/contactus"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Social
+                  Contact Us
                 </a>
               </div>
+              
             </div>
           </div>
         </Dialog.Panel>

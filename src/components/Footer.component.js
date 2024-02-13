@@ -82,8 +82,8 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
-                          Blogs & Articles
+                        <a href="/custom software development" className="text-blue-500 text-lg">
+                          Services
                         </a>
                       </li>
                       <li>
@@ -95,18 +95,14 @@ const Footer = () => {
                   </div>
                   <div className="col-span-1">
                     <ul className="list-none addlineHeightFooter1">
+                      
                       <li>
-                        <a href="/custom software development" className="text-blue-500 text-lg">
-                          Services
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/privacy" className="text-blue-500 text-lg">
                           Privacy Policy
                         </a>
                       </li>
                       <li>
-                        <a href="#!" className="text-blue-500 text-lg">
+                        <a href="/terms" className="text-blue-500 text-lg">
                           Terms
                         </a>
                       </li>
@@ -114,7 +110,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="mt-8">
-                  <h5 className="text-xl font-bold mb-4">Subscribe Our Newsletter</h5>
+                  <h5 className="text-xl font-bold mb-4">Request a Quote</h5>
                   <div className="subscribe-form">
                     <form id="mc-form" className="mc-form">
                       <input
@@ -130,7 +126,7 @@ const Footer = () => {
                         className="subscribe-btn bg-blue-500 text-white p-2 ml-2 cursor-pointer"
                         type="submit"
                         name="subscribe"
-                        value="Subscribe Now"
+                        value="Request Quote"
                       />
                     </form>
                   </div>
