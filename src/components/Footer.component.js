@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './footer.css';
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    try {
+      const response = await axios.post("http://localhost:3001/api/send-email", { email });
+      if (response.status === 200 && response.data.success) {
+        setSuccessMessage('Quote requested successfully. We will contact you soon.');
+        setEmail('');
+      } else {
+        setErrorMessage('Failed to request quote. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error requesting quote:', error);
+      setErrorMessage('An error occurred while requesting a quote. Please try again later.');
+    }
+    setIsLoading(false);
+    
+  };
+
   return (
     <>
       {/* <!--footer start--> */}
@@ -111,24 +136,28 @@ const Footer = () => {
                 </div>
                 <div className="mt-8">
                   <h5 className="text-xl font-bold mb-4">Request a Quote</h5>
+                  {successMessage && <div className="success-message">{successMessage}</div>}
+                  {errorMessage && <div className="error-message">{errorMessage}</div>}
                   <div className="subscribe-form">
-                    <form id="mc-form" className="mc-form">
-                      <input
-                        type="email"
-                        // value=""
-                        name="EMAIL"
-                        className="email border border-gray-400 p-2 w-full"
-                        id="mc-email"
-                        placeholder="Email Address"
-                        required=""
-                      />
-                      <input
-                        className="subscribe-btn bg-blue-500 text-white p-2 ml-2 cursor-pointer"
-                        type="submit"
-                        name="subscribe"
-                        value="Request Quote"
-                      />
-                    </form>
+                  <form id="mc-form" className="mc-form" onSubmit={handleSubmit}>
+                  <input
+                    type="email"
+                    name="email" 
+                    className="email border border-gray-400 p-2 w-full"
+                    id="mc-email"
+                    placeholder="Email Address"
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)} 
+                    required
+                  />
+                  <input
+                    className="subscribe-btn bg-blue-500 text-white p-2 ml-2 cursor-pointer"
+                    type="submit"
+                    value={isLoading ? "Submitting..." : "Request Quote"} 
+                    disabled={isLoading} 
+                  />
+                </form>
+
                   </div>
                 </div>
               </div>
