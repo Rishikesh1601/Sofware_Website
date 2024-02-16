@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import './card.css'
 // import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
+import IOF from "../assets/clients/Indian-Ordance.jpg";
+import Bul from "../assets/clients/Buldhana-Police.jpg";
+import Tata from "../assets/clients/Tata-AutoCorp.jpg";
+import Vivo from "../assets/clients/Vivo.jpg";
+import John from "../assets/clients/John-Dee.jpg";
+import Soft from "../assets/clients/Soft-tech.jpg";
+import Cian from "../assets/clients/CIAN.jpg";
+import Max from "../assets/clients/Max-Heal.jpg";
 class CompaniesSlider extends Component {
   render() {
     // const NextArrow = (props) => {
@@ -65,30 +73,30 @@ class CompaniesSlider extends Component {
         <div class="theme-title z-index-1 pt-7">
           <h6 className='text-center'>Our Clients</h6>
         </div>
-        <Slider {...settings} className="sliderComponentForMobile">
+        <Slider {...settings} className="sliderComponentForMobile flex gap-4">
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/IOF.jpg" alt="" className="grayscale" />
+            <img src={IOF} alt="" className="grayscale" />
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Buldhana-Police-Logo.jpg" alt="" className="grayscale"/>
+            <img src={Bul} alt="" className="grayscale"/>
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Tata-AutoCorp-1.jpg" alt="" className="grayscale" />
+            <img src={Tata} alt="" className="grayscale" />
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Vivo-Logo.jpg" alt="" className="grayscale"/>
+            <img src={Vivo} alt="" className="grayscale"/>
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/John-Deere-Logo.jpg" alt="" className="grayscale"/>
+            <img src={John} alt="" className="grayscale"/>
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Softtech-Logo.jpg" alt="" className="grayscale"/>
+            <img src={Soft} alt="" className="grayscale"/>
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Cian-Logo.jpg" alt="" className="grayscale"/>
+            <img src={Cian} alt="" className="grayscale"/>
           </div>
           <div className="image-container">
-            <img src="https://dreamztechnology.com/wp-content/uploads/2023/10/Max-heal-Logo.jpg" alt="" className="grayscale"/>
+            <img src={Max} alt="" className="grayscale"/>
           </div>
           {/* Add more slide items as needed */}
         </Slider>

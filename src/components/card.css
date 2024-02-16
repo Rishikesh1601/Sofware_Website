@@ -101,7 +101,13 @@ h2 {
     padding: 10px;
     border-radius:50px;
 }
-  
+.grayscale{
+    border:1px solid black;
+    border-radius: 10px;
+}
+.slick-slide {
+    padding: 0 10px; /* Adjust the gap size as needed */
+  }
 @media(max-width:768px){
     .featured-item{
         /* margin-left: 40px; */

@@ -24,9 +24,9 @@ function CustomSoftwareDevelopmentPage() {
     <br></br>
   
     <SDLC />
+    {/* <br></br>
     <br></br>
-    <br></br>
-    <OurProjectComponent />
+    <OurProjectComponent /> */}
     <br></br>
     <br></br>
     <CounterComponent />

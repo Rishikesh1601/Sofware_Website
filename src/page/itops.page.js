@@ -22,9 +22,9 @@ const ItopsPage = () => {
         <br></br>
         <br></br>
         <ITLC />
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <OurProjectComponent />
+        <OurProjectComponent /> */}
         <br></br>
         <br></br>
         <CounterComponent />

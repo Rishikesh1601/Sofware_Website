@@ -21,9 +21,9 @@ const MobileDevelopmentPage = () => {
         <br></br>
         <br></br>
         <MDLC />
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <OurProjectComponent />
+        <OurProjectComponent /> */}
         <br></br>
         <br></br>
         <CounterComponent />

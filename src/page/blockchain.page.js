@@ -21,9 +21,9 @@ const BlockChainPage = () => {
         <br></br>
         <br></br>
         <BDLC />
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <OurProjectComponent />
+        <OurProjectComponent /> */}
         <br></br>
         <br></br>
         <CounterComponent />

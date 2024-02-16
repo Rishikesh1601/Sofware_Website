@@ -10,7 +10,7 @@ import CompaniesSlider from '../components/Companiesslider';
 import Footer from '../components/Footer.component';
 // import EndLC from '../components/endLC';
 import Accordion from '../components/mainPage.accordian';
-
+import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <>
@@ -29,9 +29,9 @@ const HomePage = () => {
     <br></br>
     <br></br>
     <CounterComponent />
+    {/* <br></br>
     <br></br>
-    <br></br>
-    <OurProjectComponent />
+    <OurProjectComponent /> */}
     <br></br>
     <br></br>
     <CompaniesSlider />

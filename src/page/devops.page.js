@@ -21,9 +21,9 @@ const DevOpsPage = () => {
         <br></br>
         <br></br>
         <DevopstoDeliver />
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <OurProjectComponent />
+        <OurProjectComponent /> */}
         <br></br>
         <br></br>
         <CounterComponent />

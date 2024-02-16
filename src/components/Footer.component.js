@@ -25,6 +25,14 @@ const Footer = () => {
     setIsLoading(false);
     
   };
+  
+  const scrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling behavior
+    });
+};
 
   return (
     <>
@@ -170,8 +178,14 @@ const Footer = () => {
               <div className="text-center py-4 copyrightTextForMobile">
                 Copyright 2023 Dreamz Software Solutions Pvt. Ltd.
               </div>
+              
             </div>
+            
           </div>
+          
+        </div>
+        <div className='flex justify-end -mt-7 me-11'>
+                <a href="#" className="flex bg-black text-white w-36 p-2 text-xl rounded-xl -mt-5" onClick={scrollToTop}>Back to Top &#8593;</a>
         </div>
       </footer>
     </>

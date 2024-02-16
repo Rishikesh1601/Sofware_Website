@@ -9,14 +9,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+.homePageMainText{
+  margin-left:95px;
+}
+.homePageMainText span{
+  font-size: xx-large !important;
 }
 @media(max-width:1380px){
   body{
     zoom:0.9;
   }
   .homePageMainText{
-    width:max-content;
-    margin-left:25px;
+    margin-left:95px;
+  }
+}
+@media(max-width:768px){
+  .homePageMainText{
+    width: 100%;
+    margin-left:0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .textMainTitleHead{
+    font-size: xx-large !important;
+    text-align: center;
   }
 }
 code {
@@ -28,4 +46,15 @@ code {
 }
 .text-justify{
   text-align: justify !important;
+}
+.requestQuoteBtn{
+  padding: 12px;
+  background-color: white;
+  max-width:190px;
+  margin-left:35px;
+  border-radius: 30px;
+}
+.requestQuoteText{
+  font-size: large;
+  font-weight: 600;
 }

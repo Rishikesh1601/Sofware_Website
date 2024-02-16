@@ -21,9 +21,9 @@ const WebsiteDevelopment = () => {
     <br></br>
     <br></br>
     <SDLC />
+    {/* <br></br>
     <br></br>
-    <br></br>
-    <OurProjectComponent />
+    <OurProjectComponent /> */}
     <br></br>
     <br></br>
     <CounterComponent />

@@ -5,7 +5,7 @@ function AboutusComponent() {
   return (
     // <!--about start-->
 
-        <section className='mx-5 aboutusComponent'>
+        <section className='mx-5 aboutusComponent' id='aboutUsComp'>
         <div class="container">
             <div class="flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 md:w-full">

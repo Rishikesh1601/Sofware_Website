@@ -17,9 +17,9 @@ const AiopsPage = () => {
         <br></br>
         <br></br>
         <AIopsCapabilities />
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <OurProjectComponent />
+        <OurProjectComponent /> */}
         <br></br>
         <br></br>
         <CounterComponent />

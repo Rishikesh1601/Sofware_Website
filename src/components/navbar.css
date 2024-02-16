@@ -34,6 +34,10 @@
   position: fixed;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
 }
+#myHead.fixed .requestQuoteBtn{
+  background-color: #00c4cc;
+  color: white;
+}
 
 @media(max-width:768px){
   #myHead{
@@ -60,7 +64,7 @@
     border: 1px solid lightgray; */
     border-radius: 50px;
     margin-left: 160px;
-    background-color: white;
+    /* background-color: white; */
 }
 .edit-this-service{
   max-width: max-content !important;
