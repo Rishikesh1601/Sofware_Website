@@ -184,7 +184,7 @@ const Footer = () => {
           </div>
           
         </div>
-        <div className='flex justify-end -mt-7 me-11'>
+        <div className='hidden lg:flex lg:justify-end lg:-mt-7 lg:me-11'>
                 <a href="#" className="flex bg-black text-white w-36 p-2 text-xl rounded-xl -mt-5" onClick={scrollToTop}>Back to Top &#8593;</a>
         </div>
       </footer>

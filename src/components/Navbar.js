@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from 'react';
 import './navbar.css';
+import QuoteModal from './QuoteModal';
 import Dreamz from "../assets/Images/dreamz logo.png"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
@@ -65,6 +66,16 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setModalOpen(false);
+    };
 
   return (
     <header className={isScrolled ? 'fixed' : ''} id='myHead'>
@@ -236,8 +247,12 @@ const Navbar = () => {
         </div>
 
         </div> */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-center requestQuoteBtn">
-          <a href='#!' target='blank' className='requestQuoteText'>Request a Quote</a>
+         <div>
+            <div className="hidden lg:flex lg:flex-1 lg:justify-center requestQuoteBtn">
+                <a href='#' className='requestQuoteText' onClick={handleOpenModal}>Request a Quote</a>
+                <QuoteModal isOpen={modalOpen} onClose={handleCloseModal} />
+            </div>
+            
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
