@@ -112,7 +112,7 @@ const Navbar = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-5 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-5 w-screen max-w-xs overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
                 <div className="p-4">
                   {aboutus.map((item) => (
                     <div
@@ -151,7 +151,7 @@ const Navbar = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="edit-this-service absolute -left-8 top-full z-10 mt-5 w-screen overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
+              <Popover.Panel className="edit-this-service absolute -left-8 top-full z-10 mt-5 w-screen overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
                 <div className="p-4">
                   {services.map((item) => (
                     <div
@@ -190,7 +190,7 @@ const Navbar = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-5 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-5 w-screen max-w-xs overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 text-start">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
@@ -247,13 +247,12 @@ const Navbar = () => {
         </div>
 
         </div> */}
-         <div>
+         
             <div className="hidden lg:flex lg:flex-1 lg:justify-center requestQuoteBtn">
                 <a href='#' className='requestQuoteText' onClick={handleOpenModal}>Request a Quote</a>
                 <QuoteModal isOpen={modalOpen} onClose={handleCloseModal} />
             </div>
-            
-        </div>
+        
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />

@@ -48,14 +48,24 @@ const Footer = () => {
                     <p className="mb-0 text-lg">Office No 27, DNK Business Bay, Katraj – Kondhwa Rd,<br></br> Rajas Society, Katraj, Pune, Maharashtra 411046</p>
                   </li>
                   <li>
+                    <div className='flex flex-col'>
                     <a href="mailto:info@dreamztechnology.com" className="text-blue-500 text-lg">
                     info@dreamztechnology.com
                     </a>
+                    <a href="mailto:hr@dreamz.website" className="text-blue-500 text-lg">
+                    hr@dreamz.website
+                    </a>
+                    </div>
                   </li>
                   <li>
+                    <div className='flex flex-col'>
                     <a href="tel:+919960685666" className="text-blue-500 text-lg">
                     +91 9960685666
                     </a>
+                    <a href="tel:+912046766249" className="text-blue-500 text-lg">
+                    +91 2046766249
+                    </a>
+                    </div>
                   </li>
                 </ul>
                 <h5 className="text-xl font-bold mb-2">Follow Us</h5>
@@ -142,7 +152,69 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-8">
+                <h5 className="text-xl font-bold mb-4 mt-8">Marketing Tools</h5>
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+                
+                  <div className="col-span-1">
+                    <ul className="list-none addlineHeightFooter1">
+                      <li>
+                        <a href="http://wa.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          WhatsApp ChatBot
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://trans.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          Transactional Bulk SMS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://promo.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          Promotional Bulk SMS
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-span-1">
+                    <ul className="list-none addlineHeightFooter1">
+                      <li>
+                        <a href="http://bizmail.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          Transactional Bulk Email
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://mail.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          Promotional Bulk Email
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://ivr.dreamztechnolgy.org" target='blank' className="text-blue-500 text-lg">
+                          IVR Services
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-span-1">
+                    <ul className="list-none addlineHeightFooter1">
+                      
+                      <li>
+                        <a href="http://voice.dreamztechnolgy.org/" target='blank' className="text-blue-500 text-lg">
+                          Bulk Voice Call
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://dreamztechnology.supersite2.myorderbox.com/en/" target='blank' className="text-blue-500 text-lg">
+                          Domain & Hosting
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://auth.easebuzz.in/easebuzz" target='blank' className="text-blue-500 text-lg">
+                          Payment Merchant
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                {/* <div className="mt-8">
                   <h5 className="text-xl font-bold mb-4">Request a Quote</h5>
                   {successMessage && <div className="success-message">{successMessage}</div>}
                   {errorMessage && <div className="error-message">{errorMessage}</div>}
@@ -167,7 +239,7 @@ const Footer = () => {
                 </form>
 
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

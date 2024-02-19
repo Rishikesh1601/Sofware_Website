@@ -124,7 +124,7 @@ const ClientGallery = () => {
             <h6 className='aboutusTitle'>Our Clients</h6>
         </div> 
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:ms-7">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 md:ms-4 me-4">
         {clientImages.map((clientImage, index) => (
           <div key={index}>
             <img className="h-auto max-w-full rounded-lg border" src={clientImage} alt="" />
