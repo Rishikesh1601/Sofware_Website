@@ -330,5 +330,8 @@ span{
     .mobTextEditMainTitle{
       font-size: 43px !important;
     }
+    .scroll-down{
+      display: none;
+    }
   }
   
