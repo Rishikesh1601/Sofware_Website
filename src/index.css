@@ -36,6 +36,10 @@ body {
     font-size: xx-large !important;
     text-align: center;
   }
+  .clientGaleryMobView{
+    margin-right:5px !important;
+    margin-left:5px !important;
+  }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

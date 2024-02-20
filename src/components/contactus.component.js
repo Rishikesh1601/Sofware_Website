@@ -104,7 +104,7 @@ const ContactUs = () => {
             ></textarea>
           </div>
 
-          <ReCAPTCHA sitekey="6Lcyz-gkAAAAACP3J0V7WI386_8Rs77SW7ZDbCqG" onChange={onChange} />
+          <ReCAPTCHA sitekey="6Lcyz-gkAAAAACP3J0V7WI386_8Rs77SW7ZDbCqG" onChange={onChange} className='mb-3 w-full'/>
 
           <button type="submit" className="mb-6 inline-block w-full rounded buttonaboutus">
             Send
@@ -147,6 +147,9 @@ const ContactUs = () => {
                     <p className="text-neutral-500 ">
                       +91 99606 85666
                     </p>
+                    <p className="text-neutral-500 ">
+                      +91 2046766249
+                    </p>
                   </div>
                 </div>
               </div>
@@ -163,6 +166,9 @@ const ContactUs = () => {
                     <p className="font-bold ">Email</p>
                     <p className="text-neutral-500 ">
                       info@dreamztechnology.com
+                    </p>
+                    <p className="text-neutral-500 ">
+                    hr@dreamz.website
                     </p>
                   </div>
                 </div>

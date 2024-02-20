@@ -63,7 +63,7 @@
       flex-direction: column !important;
       flex-wrap: wrap !important;
       justify-content: space-around !important;
-      width:min-content;
+      width:fit-content;
     }
     .career-container{
       margin-left:4px !important;
@@ -72,7 +72,7 @@
       width:90% !important;
     }
     .jobForm{
-      width:max-content !important;
+      width:fit-content !important;
       margin-left:10px !important;
     }
   }
