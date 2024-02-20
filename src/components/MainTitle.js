@@ -29,7 +29,7 @@ const MainTitle = () => {
                             </div>
                         </div>
                         <div className="lg:w-6/12 mt-36">
-                            <h1 className="mb-4 text-black text-6xl font-bold text-start homePageMainText textMainTitl">
+                            <h1 className="mb-4 text-black text-6xl font-bold text-start homePageMainText textMainTitl mobTextEditMainTitle">
                                 Unlock Your Business Potential with Dreamz <br />
                                 <TypeAnimation
                                     sequence={[
@@ -56,7 +56,7 @@ const MainTitle = () => {
                                 A global IT consulting & software solutions provider
                             </p>
                             <div className="flex justify-start items-center mt-12 homePageMainText">
-                                <a className="themeht-btn" href="tel:+919960685666">WhatsApp Us</a>
+                            <a className="themeht-btn" href="whatsapp://send?phone=+919960685666">WhatsApp Us</a>
                                 <a className="themeht-btn dark-btn ms-3" href="mailto:info@dreamztechnology.com">Email Us</a>
                             </div>
                             <div className="scroll-down"></div>

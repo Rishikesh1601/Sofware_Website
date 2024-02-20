@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <header className={isScrolled ? 'fixed' : ''} id='myHead'>
-      <nav className="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex items-center justify-between lg:p-6 lg:px-8 navMobView" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Dreamz Technology</span>
@@ -256,10 +256,10 @@ const Navbar = () => {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white navMobView sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Dreamz Technology</span>
+              {/* <span className="sr-only">Dreamz Technology</span> */}
               <img
                 className="h-16 w-18"
                 src="http://dreamztechnologies.com/assets/uploads/logos/logo_transperant.png"
