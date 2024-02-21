@@ -53,6 +53,22 @@ const CareerComponent = () => {
       ...prevData,
       [name]: type === 'file' ? files[0] : value,
     }));
+
+    // Check if the input name is 'name' and filter out non-alphabet characters
+    if (name === 'name') {
+      // Only allow alphabetic characters
+      const filteredValue = value.replace(/[^A-Za-z\s]/g, '');
+      setFormData(prevState => ({
+        ...prevState,
+        [name]: filteredValue
+      }));
+    } else {
+      // Handle other inputs normally
+      setFormData(prevState => ({
+        ...prevState,
+        [name]: value
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -210,6 +226,8 @@ const CareerComponent = () => {
                 "
                 placeholder="Enter Your Name"
                 onChange={handleChange}
+                pattern="[A-Za-z\s]+"
+                title="Name should contain only alphabetic characters"
               />
             </label>
             <label class="block mb-6">
@@ -253,6 +271,7 @@ const CareerComponent = () => {
                   focus:ring-opacity-50
                 "
               >
+                <option disabled selected>Select Your Experience</option>
                 <option>Less than a year</option>
                 <option>1 - 2 years</option>
                 <option>2 - 4 years</option>
@@ -289,6 +308,7 @@ const CareerComponent = () => {
                 name="cv"
                 type="file"
                 onChange={handleChange}
+                accept=".docx, .pdf"
                 class="
                   block
                   w-full
@@ -300,56 +320,8 @@ const CareerComponent = () => {
                 "
               />
             </label>
-            <div class="mb-6">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input
-                      name="remote"
-                      value="yes"
-                      onChange={handleChange}
-                      type="radio"
-                      class="
-                        text-indigo-600
-                        border-gray-300
-                        rounded-full
-                        shadow-sm
-                        focus:border-indigo-300
-                        focus:ring
-                        focus:ring-offset-0
-                        focus:ring-indigo-200
-                        focus:ring-opacity-50
-                      "
-                      checked
-                    />
-                    <span class="ml-2 careerText">You'd like to work remotely</span>
-                  </label>
-                </div>
-                <div>
-                  <label class="inline-flex items-center">
-                    <input
-                      name="re"
-                      value="no"
-                      onChange={handleChange}
-                      type="radio"
-                      class="
-                        text-indigo-600
-                        border-gray-300
-                        rounded-full
-                        shadow-sm
-                        focus:border-indigo-300
-                        focus:ring
-                        focus:ring-offset-0
-                        focus:ring-indigo-200
-                        focus:ring-opacity-50
-                      "
-                    />
-                    <span class="ml-2 careerText">You'd prefer to work onsite</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="mb-6">
+
+            <div class="mb-1 flex justify-center items-center mt-11">
               <button
                 type="submit"
                 class="
@@ -362,6 +334,7 @@ const CareerComponent = () => {
                   duration-150
                   focus:shadow-outline
                   hover:bg-indigo-800
+                  w-full
                 "
               >
                 Apply

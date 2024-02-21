@@ -18,6 +18,30 @@ const QuoteModal = ({ isOpen, onClose }) => {
             ...formData,
             [e.target.name]: e.target.value
         });
+        // If the input name is 'phone', limit its length to 10 characters
+        if (e.target.name === 'phone' && e.target.value.length > 10) {
+            return; // Stop the function from proceeding further
+        }
+
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+
+        // Check if the input name is 'name' and filter out non-alphabet characters
+            if (e.target.name === 'name') {
+                const filteredValue = e.target.value.replace(/[^A-Za-z\s]/g, '');
+                setFormData({
+                ...formData,
+                [e.target.name]: filteredValue,
+                });
+            } else {
+                // For all other inputs, use the entered value as it is
+                setFormData({
+                ...formData,
+                [e.target.name]: e.target.value,
+                });
+            }
     };
 
     const handleSubmit = async (e) => {
@@ -53,7 +77,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-gray-700 text-sm font-bold text-start">Name</label>
-                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full mt-1 p-2 border border-gray-300 rounded-md" required />
+                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full mt-1 p-2 border border-gray-300 rounded-md" pattern="[A-Za-z\s]+" title="Name should contain only alphabetic characters" required />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="email" className="block text-gray-700 text-sm font-bold text-start">Email</label>
@@ -61,7 +85,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                         </div>
                         <div className="mb-4">
                             <label htmlFor="phone" className="block text-gray-700 text-sm font-bold text-start">Phone</label>
-                            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full mt-1 p-2 border border-gray-300 rounded-md" pattern="[0-9]{10}" required />
+                            <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full mt-1 p-2 border border-gray-300 rounded-md" pattern="\d{10}" title="Phone number should be 10 digits" required />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="service" className="block text-gray-700 text-sm font-bold text-start">Service</label>

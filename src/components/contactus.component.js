@@ -16,6 +16,30 @@ const ContactUs = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // If the input name is 'phone', limit its length to 10 characters
+      if (e.target.name === 'phoneNumber' && e.target.value.length > 10) {
+        return; // Stop the function from proceeding further
+      }
+
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
+
+      // Check if the input name is 'name' and filter out non-alphabet characters
+        if (e.target.name === 'name') {
+          const filteredValue = e.target.value.replace(/[^A-Za-z\s]/g, '');
+          setFormData({
+            ...formData,
+            [e.target.name]: filteredValue,
+          });
+        } else {
+          // For all other inputs, use the entered value as it is
+          setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+          });
+        }
   };
 
   const handleSubmit = async (e) => {
@@ -57,6 +81,9 @@ const ContactUs = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Name"
+              pattern="[A-Za-z\s]+"
+              title="Name should contain only alphabetic characters"
+              required
             />
           </div>
 
@@ -72,6 +99,7 @@ const ContactUs = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email address"
+              required
             />
           </div>
 
@@ -87,6 +115,9 @@ const ContactUs = () => {
               value={formData.phoneNumber}
               onChange={handleChange}
               placeholder="Enter Phone Number"
+              pattern="\d{10}"
+              title="Phone number should be 10 digits"
+              required
             />
           </div>
 
@@ -101,6 +132,7 @@ const ContactUs = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Enter your message"
+              required
             ></textarea>
           </div>
 
