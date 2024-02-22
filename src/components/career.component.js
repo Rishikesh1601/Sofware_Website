@@ -44,32 +44,38 @@ const CareerComponent = () => {
     experience: 'Less than a year',
     message: '',
     cv: null,
-    remote: true,
+    // remote: true,
   });
+
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: type === 'file' ? files[0] : value,
-    }));
-
-    // Check if the input name is 'name' and filter out non-alphabet characters
+  
+    // Handle file input separately
+    if (type === 'file') {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: files[0],
+      }));
+      return; // Stop execution here for file inputs
+    }
+  
+    // For non-file inputs, apply filtering if necessary
+    let newValue = value;
     if (name === 'name') {
       // Only allow alphabetic characters
-      const filteredValue = value.replace(/[^A-Za-z\s]/g, '');
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: filteredValue
-      }));
-    } else {
-      // Handle other inputs normally
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: value
-      }));
+      newValue = value.replace(/[^A-Za-z\s]/g, '');
     }
+  
+    // Update the form data
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: newValue,
+    }));
   };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -84,11 +90,12 @@ const CareerComponent = () => {
           'Content-Type': 'multipart/form-data',
         },
       });
-      console.log('Career application submitted successfully');
-      // Optionally, you can redirect the user or show a success message
+      setSuccessMessage('Career application submitted successfully');
+      setErrorMessage('');
     } catch (error) {
       console.error('Error submitting career application:', error);
-      // Handle error, show error message, etc.
+      setErrorMessage('Failed to submit career application');
+      setSuccessMessage('');
     }
   };
 
@@ -320,7 +327,8 @@ const CareerComponent = () => {
                 "
               />
             </label>
-
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+            {successMessage && <p className="text-green-500">{successMessage}</p>}
             <div class="mb-1 flex justify-center items-center mt-11">
               <button
                 type="submit"

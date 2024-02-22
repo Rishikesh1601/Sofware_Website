@@ -48,7 +48,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
         e.preventDefault();
         setIsLoading(true);
         try {
-            await axios.post("http://localhost:3001/api/send-quote-email", formData);
+            await axios.post("https://software-website-server.vercel.app/api/send-quote-email", formData);
             setIsSubmitted(true);
             setTimeout(() => {
                 setIsSubmitted(false);
