@@ -212,7 +212,7 @@ const CareerComponent = () => {
 
           <div class="w-full md:w-96 md:max-w-full mx-auto">
         <div class="p-6 border border-gray-300 sm:rounded-md">
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}>
             <label class="block mb-6">
               <span class="text-gray-700 careerText">Your name</span>
               <input
@@ -348,7 +348,20 @@ const CareerComponent = () => {
                 Apply
               </button>
             </div>
-          </form>
+          </form> */}
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+  <div className="px-6 py-4">
+    <div className="font-bold text-xl mb-2 text-gray-800">Join Our Team</div>
+    <p className="text-gray-700 text-base">
+      We're looking for talented individuals to join our team! Send us your CV at
+    </p>
+    <a href="mailto:hr@dreamz.website" className="text-blue-500 text-lg">
+                    hr@dreamz.website
+    </a>
+  </div>
+  
+</div>
+
         </div>
       </div>
 

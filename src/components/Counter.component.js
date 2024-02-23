@@ -45,7 +45,7 @@ const CounterComponent = () => {
 
   return (
     <section id="counter-box" className="mx-11 p-0 text-center">
-      <div className="container mx-auto addbgimage">
+      <div className="mx-auto addbgimage">
         {/* <div class="theme-title z-index-1 pt-7">
           <h6 className='text-center'>Facts and Figures</h6>
         </div> */}

@@ -2,6 +2,7 @@ import React from "react";
 import TataAutoCorp from "../assets/clients/Tata-AutoCorp.jpg";
 import JohnDee from "../assets/clients/John-Dee.jpg";
 import Cian from "../assets/clients/CIAN.jpg";
+import Balaji from "../assets/new clients/balaji wafers.png"
 import Buldhana from "../assets/clients/Buldhana-Police.jpg";
 import Vivo from "../assets/clients/Vivo.jpg";
 import Indian from "../assets/clients/Indian-Ordance.jpg";
@@ -54,20 +55,42 @@ import RSS from "../assets/clients/RSS-Jan-Kalyan.jpg";
 import CFOSB from "../assets/clients/Cfosb.jpg";
 import SFC from "../assets/clients/SFC.jpg";
 import Soni from "../assets/clients/Sonione-aviation.jpg";
-
-
+import BansalCal from "../assets/new clients/bansal classes.jpg"
+import Banadir from "../assets/new clients/banadir.jpeg"
+import hfm from "../assets/new clients/HFM.jpg";
+import goseva from "../assets/new clients/goshala.jpeg";
+import mahango from "../assets/new clients/maha ngo.jpeg";
+import bluechip from "../assets/new clients/blue chip.webp";
+import bulsara from "../assets/new clients/bulsara.png";
+import mbnif from "../assets/new clients/MBNIF.png";
+import sahyog from "../assets/new clients/sahyog.jpeg";
+// import suraksha from "../assets/new clients/suraksha sangh.png";
+import todkar from "../assets/new clients/todkar.jpeg";
 const clientImages = [
+    
     TataAutoCorp,
     JohnDee,
     Cian,
+    Balaji,
     Buldhana,
     Vivo,
     Indian,
-    Soft,
+    BansalCal,
+    Banadir,
+    Malpani,
+    hfm,
+    Amcl,
+    goseva,
+    mahango,
+    bluechip,
+    bulsara,
+    todkar,
+    // suraksha,
+    sahyog,
     GT,
     Alpha,
     Max,
-    Amcl,
+    Soft,
     ABMYS,
     Agarwal,
     Suzuki,
@@ -87,6 +110,7 @@ const clientImages = [
     Meral,
     Purna,
     Sai,
+    mbnif,
     Lean,
     PT,
     Appoin,
@@ -98,7 +122,7 @@ const clientImages = [
     Humsafar,
     Icon,
     Dhruv,
-    Malpani,
+
     More,
     Narmada,
     Noor,
@@ -127,7 +151,7 @@ const ClientGallery = () => {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4 md:ms-4 me-4 clientGaleryMobView">
         {clientImages.map((clientImage, index) => (
           <div key={index}>
-            <img className="h-auto max-w-full rounded-lg border" src={clientImage} alt="" />
+            <img className="h-36 w-96 rounded-lg border" src={clientImage} alt="" />
           </div>
         ))}
       </div>

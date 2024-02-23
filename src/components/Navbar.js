@@ -23,7 +23,7 @@ import {
   AcademicCapIcon,
 
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, CursorArrowRippleIcon} from '@heroicons/react/20/solid'
+import { ChevronDownIcon, CursorArrowRippleIcon, PhoneIcon} from '@heroicons/react/20/solid'
 
 const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
@@ -67,15 +67,15 @@ const Navbar = () => {
     };
   }, []);
 
-  const [modalOpen, setModalOpen] = useState(false);
+  // const [modalOpen, setModalOpen] = useState(false);
 
-    const handleOpenModal = () => {
-        setModalOpen(true);
-    };
+  //   const handleOpenModal = () => {
+  //       setModalOpen(true);
+  //   };
 
-    const handleCloseModal = () => {
-        setModalOpen(false);
-    };
+  //   const handleCloseModal = () => {
+  //       setModalOpen(false);
+  //   };
 
   return (
     <header className={isScrolled ? 'fixed' : ''} id='myHead'>
@@ -248,10 +248,14 @@ const Navbar = () => {
 
         </div> */}
          
-            <div className="hidden lg:flex lg:flex-1 lg:justify-center requestQuoteBtn">
+            {/* <div className="hidden lg:flex lg:flex-1 lg:justify-center requestQuoteBtn">
                 <a href='#' className='requestQuoteText' onClick={handleOpenModal}>Request a Quote</a>
                 <QuoteModal isOpen={modalOpen} onClose={handleCloseModal} />
-            </div>
+            </div> */}
+          <div className="hidden lg:flex lg:flex-1 lg:justify-center items-center requestQuoteBtn">
+                <PhoneIcon className='w-1/6 me-3'/>
+                <a href='tel:+919960685666' className='requestQuoteText'>Call Us</a>
+          </div>
         
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

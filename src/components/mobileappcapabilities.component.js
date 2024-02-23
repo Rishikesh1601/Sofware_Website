@@ -50,11 +50,11 @@ const MobileAppCapabilities = () => {
           <button
             key={index}
             onClick={() => handleButtonClick(index)}
-            className={`px-4 py-2 rounded-xl mr-2 mb-2 ${
-                activeButton === index
-                  ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-purple-700 text-white shadow-md'
-                  : 'filter grayscale hover:grayscale-0 bg-gray-300 text-gray-700 shadow-sm'
-              }`}
+            className={`px-4 py-2 rounded-3xl mr-2 mb-2 ${
+              activeButton === index
+                ? 'bg-gray-100 text-blue-600 font-semibold border-b-2 border-blue-500'
+                : 'bg-gray-300 text-gray-700 shadow-sm border border-gray-300 hover:border-gray-400'
+            }`}   
           >
             {buttonName}
           </button>

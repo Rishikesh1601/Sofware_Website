@@ -66,9 +66,9 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-around makeitaround">
+        {/* <div className="flex flex-wrap items-center justify-around makeitaround"> */}
 
-        <form onSubmit={handleSubmit} className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+        {/* <form onSubmit={handleSubmit} className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
           <div className="mb-3 w-full">
             <label className="block font-medium mb-[2px] text-teal-700" htmlFor="name">
               Name
@@ -141,9 +141,9 @@ const ContactUs = () => {
           <button type="submit" className="mb-6 inline-block w-full rounded buttonaboutus">
             Send
           </button>
-        </form>
+        </form> */}
 
-          <div className="w-full shrink-0 grow-0 basis-auto lg:w-1/2">
+          <div className="w-full shrink-0 grow-0 basis-auto lg:w-full justify-center items-center">
             <iframe className='w-full manageIframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15139.05542243947!2d73.8687765!3d18.449028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91fd5c6d489%3A0x954fefd0b60cba12!2sDreamz%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1681883790875!5m2!1sen!2sin" width="100&amp;" height="250" allowFullScreen></iframe>
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
@@ -207,7 +207,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
     </div>
   );
