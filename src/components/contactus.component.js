@@ -17,40 +17,40 @@ const ContactUs = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     // If the input name is 'phone', limit its length to 10 characters
-      if (e.target.name === 'phoneNumber' && e.target.value.length > 10) {
-        return; // Stop the function from proceeding further
-      }
+    if (e.target.name === 'phoneNumber' && e.target.value.length > 10) {
+      return; // Stop the function from proceeding further
+    }
 
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+
+    // Check if the input name is 'name' and filter out non-alphabet characters
+    if (e.target.name === 'name') {
+      const filteredValue = e.target.value.replace(/[^A-Za-z\s]/g, '');
       setFormData({
         ...formData,
-        [e.target.name]: e.target.value
+        [e.target.name]: filteredValue,
       });
-
-      // Check if the input name is 'name' and filter out non-alphabet characters
-        if (e.target.name === 'name') {
-          const filteredValue = e.target.value.replace(/[^A-Za-z\s]/g, '');
-          setFormData({
-            ...formData,
-            [e.target.name]: filteredValue,
-          });
-        } else {
-          // For all other inputs, use the entered value as it is
-          setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-          });
-        }
+    } else {
+      // For all other inputs, use the entered value as it is
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setFormData({ ...formData, sending: true }); // Set sending state to true
     try {
-      await axios.post('http://localhost:3001/api/send-contact-email', formData);
-      alert('We will reach out to you soon!');
-      // Optionally, you can redirect the user or perform any other actions after sending the email
+      await axios.post('https://software-website-server.onrender.com/api/send-contact-email', formData);
+      setFormData({ ...formData, sending: false }); // Reset sending state
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Failed to send email');
+      setFormData({ ...formData, sending: false }); // Reset sending state
     }
   };
   return (
@@ -66,9 +66,9 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* <div className="flex flex-wrap items-center justify-around makeitaround"> */}
+        <div className="flex flex-wrap items-center justify-around makeitaround">
 
-        {/* <form onSubmit={handleSubmit} className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+        <form onSubmit={handleSubmit} className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
           <div className="mb-3 w-full">
             <label className="block font-medium mb-[2px] text-teal-700" htmlFor="name">
               Name
@@ -137,13 +137,16 @@ const ContactUs = () => {
           </div>
 
           <ReCAPTCHA sitekey="6Lcyz-gkAAAAACP3J0V7WI386_8Rs77SW7ZDbCqG" onChange={onChange} className='mb-3 w-full'/>
+            {/* Success message */}
+            {formData.sending === false && <p className="text-green-500 text-xl mb-3">We received your response, will get back to you soon!</p>}
+            
+            {/* Send button */}
+            <button type="submit" className="mb-6 inline-block w-full rounded buttonaboutus" disabled={formData.sending}>
+              {formData.sending ? 'Sending...' : 'Send'}
+            </button>
+        </form>
 
-          <button type="submit" className="mb-6 inline-block w-full rounded buttonaboutus">
-            Send
-          </button>
-        </form> */}
-
-          <div className="w-full shrink-0 grow-0 basis-auto lg:w-full justify-center items-center">
+          <div className="w-full shrink-0 grow-0 basis-auto lg:w-1/2">
             <iframe className='w-full manageIframe' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15139.05542243947!2d73.8687765!3d18.449028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91fd5c6d489%3A0x954fefd0b60cba12!2sDreamz%20Software%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1681883790875!5m2!1sen!2sin" width="100&amp;" height="250" allowFullScreen></iframe>
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
@@ -207,7 +210,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-        {/* </div> */}
+        </div>
       </section>
     </div>
   );
