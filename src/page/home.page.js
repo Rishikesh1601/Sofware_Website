@@ -12,6 +12,7 @@ import Footer from '../components/Footer.component';
 import Accordion from '../components/mainPage.accordian';
 import Testimonial from '../components/testimonials.component';
 import TestimonialComponent from '../components/testimonials.component';
+import TechnologiesAccordion from '../components/technologies.accordian';
 // import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
@@ -34,6 +35,9 @@ const HomePage = () => {
     {/* <br></br>
     <br></br>
     <OurProjectComponent /> */}
+    <br></br>
+    <br></br>
+    <TechnologiesAccordion />
     <br></br>
     <br></br>
     <CompaniesSlider />

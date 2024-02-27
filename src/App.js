@@ -18,6 +18,16 @@ import AboutUsPage from './page/aboutus.page';
 // import Privacy from './components/privacy';
 import PrivacyPage from './page/privacy.page';
 import TermsPage from './page/terms.page';
+import AngularPage from './page/angular.page';
+import BootstrapPage from './page/bootstrap.page';
+import FlutterPage from './page/flutter.page';
+import HtmlPage from './page/html.page';
+import IonicPage from './page/ionic.page';
+import JavascriptPage from './page/javascript.page';
+import ReactPage from './page/react.page';
+import ShopifyPage from './page/shopify.page';
+import WordpressPage from './page/wordpress.page';
+import WooCommercePage from './page/woocommerce.page';
 
 function App() {
   return (
@@ -40,6 +50,16 @@ function App() {
         <Route path="/aboutUs" element={<AboutUsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
+        <Route path="/angular" element={<AngularPage />} />
+        <Route path="/bootstrap" element={<BootstrapPage />} />
+        <Route path="/flutter" element={<FlutterPage />} />
+        <Route path="/html" element={<HtmlPage />} />
+        <Route path="/ionic" element={<IonicPage />} />
+        <Route path="/javascript" element={<JavascriptPage />} />
+        <Route path="/react" element={<ReactPage />} />
+        <Route path="/shopify" element={<ShopifyPage />} />
+        <Route path="/wordpress" element={<WordpressPage />} />
+        <Route path="/woocommerce" element={<WooCommercePage />} />
       </Routes>
     </Router>
     </>

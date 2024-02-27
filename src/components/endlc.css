@@ -39,6 +39,17 @@
     text-align: center !important;
     
   }
+  .endlc-title1 {
+    /* color: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7); */
+    /* margin-bottom: 10px; */
+    font-size:20px !important;
+    background: linear-gradient(115deg, #00c4cc, #6420ff, #7d2ae7);
+    -webkit-background-clip: text;
+    color: black;
+    display: flex;
+    text-align: center !important;
+    
+  }
   
   .endlc-para {
     color: #000000;
@@ -52,9 +63,16 @@
     border-radius: 50%;
     transition: border-radius 0.5s ease-in-out;
   }
+.mainicon2 {
+    border-radius: 50%;
+    transition: border-radius 0.5s ease-in-out;
+  }
   
   /* Apply a different style when the card is being hovered */
   .endlc-card:hover .mainicon1 {
+    border-radius: 0; /* Set border-radius to 0 for a square icon */
+  }
+  .endlc-card:hover .mainicon2 {
     border-radius: 0; /* Set border-radius to 0 for a square icon */
   }
   
