@@ -28,6 +28,10 @@ import ReactPage from './page/react.page';
 import ShopifyPage from './page/shopify.page';
 import WordpressPage from './page/wordpress.page';
 import WooCommercePage from './page/woocommerce.page';
+import DotnetPage from './page/dotnet.page';
+import CodeIgniterPage from './page/codeigniter.page';
+import LaravelPage from './page/laravel.page';
+import MongoDBPage from './page/mongodb.page';
 
 function App() {
   return (
@@ -60,6 +64,10 @@ function App() {
         <Route path="/shopify" element={<ShopifyPage />} />
         <Route path="/wordpress" element={<WordpressPage />} />
         <Route path="/woocommerce" element={<WooCommercePage />} />
+        <Route path="/dotnet" element={<DotnetPage />} />
+        <Route path="/codeigniter" element={<CodeIgniterPage />} />
+        <Route path="/laravel" element={<LaravelPage />} />
+        <Route path="/mongo" element={<MongoDBPage />} />
       </Routes>
     </Router>
     </>

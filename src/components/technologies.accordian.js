@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 // import TechnologiesComponent from './TechnologiesComponent';
 import './accordian.css'
 import FrontendTechnologies from './technologies.frontend';
+import BackendTechnologies from './technologies.backend';
+import MobileTechnologies from './technologies.mobile';
 // import IndustryLC from './industryLC';
 // import TechnologyLC from './technologyLC';
 
@@ -33,18 +35,18 @@ const TechnologiesAccordion = () => {
   return (
     <>
     <div className='theme-title  ms-5 flex items-center justify-center'>
-        <h6 className='aboutusTitle offers'>A COMPREHENSIVE SUITE OF END TO END ENGINEERING</h6>
+        <h6 className='aboutusTitle offers'>Technologies we work on</h6>
     </div>
     <div className="accordion-container">
       <div className="accordion-buttons">
-      <button className={servicesOpen ? 'active' : ''} onClick={toggleServices}>FrontEnd</button>
-        <button className={industryOpen ? 'active' : ''} onClick={toggleIndustry}>BackEnd</button>
+      <button className={servicesOpen ? 'active' : ''} onClick={toggleServices}>Frontend</button>
+        <button className={industryOpen ? 'active' : ''} onClick={toggleIndustry}>Backend</button>
         <button className={technologiesOpen ? 'active' : ''} onClick={toggleTechnologies}>Mobile</button>
       </div>
       <div className="accordion-components">
         {servicesOpen && <FrontendTechnologies />}
-        {/* {industryOpen && <IndustryLC />}
-        {technologiesOpen && <TechnologyLC />} */}
+        {industryOpen && <BackendTechnologies />}
+        {technologiesOpen && <MobileTechnologies />}
       </div>
     </div>
     </>
