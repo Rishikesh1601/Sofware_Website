@@ -32,6 +32,11 @@ import DotnetPage from './page/dotnet.page';
 import CodeIgniterPage from './page/codeigniter.page';
 import LaravelPage from './page/laravel.page';
 import MongoDBPage from './page/mongodb.page';
+import MSsqlPage from './page/mssql.page';
+import MySqlPage from './page/mysql.page';
+import OraclePage from './page/oracle.page';
+import NodePage from './page/node.page';
+import OpenCartPage from './page/opencart.page';
 
 function App() {
   return (
@@ -68,6 +73,11 @@ function App() {
         <Route path="/codeigniter" element={<CodeIgniterPage />} />
         <Route path="/laravel" element={<LaravelPage />} />
         <Route path="/mongo" element={<MongoDBPage />} />
+        <Route path="/mssql" element={<MSsqlPage />} />
+        <Route path="/mysql" element={<MySqlPage />} />
+        <Route path="/oracle" element={<OraclePage />} />
+        <Route path="/node" element={<NodePage />} />
+        <Route path="/opencart" element={<OpenCartPage />} />
       </Routes>
     </Router>
     </>
