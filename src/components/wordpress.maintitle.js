@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as AboutUs} from '../assets/Images/aboutus main title.svg'
+import {ReactComponent as AboutUs} from '../assets/wordpressMain.svg'
 const WordPressMainTitle = () => {
     
     return(
@@ -16,7 +16,7 @@ const WordPressMainTitle = () => {
                 <div class="lg:w-6/12 order-lg-1">
                     <div class="banner-img p-0">
                     <div class="rounded box-shadow relative ">
-                        <AboutUs className="w-96 h-auto heropngEdit -mt-12"/>
+                        <AboutUs className="w-96 h-auto heropngEdit mt-12"/>
                     </div>
                     </div>
                 </div>

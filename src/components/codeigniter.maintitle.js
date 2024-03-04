@@ -5,7 +5,7 @@ import './navbar.css'
 // import { ReactComponent as WebSiteDev} from '../assets/Web Development.svg';
 // import {ReactComponent as MobileDev} from '../assets/mobileDevelopment.svg';
 // import {ReactComponent as SoftwareTest} from '../assets/softwareTesting.svg';
-import {ReactComponent as AboutUs} from '../assets/Images/aboutus main title.svg'
+import {ReactComponent as AboutUs} from '../assets/codeigniterMain.svg'
 const CodeIgniterMainTitle = () => {
     
     return(

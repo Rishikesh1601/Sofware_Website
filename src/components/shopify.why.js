@@ -1,6 +1,6 @@
 import React from 'react'
 // import { ReactComponent as AboutUsPng } from '../assets/aboutuspage.svg';
-import { ReactComponent as WhyCustomSoftwareji } from '../assets/Images/why.svg';
+import { ReactComponent as WhyCustomSoftwareji } from '../assets/whyshopify.svg';
 import './card.css'
 const WhyShopify = () => {
   return (
