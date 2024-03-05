@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from 'react';
 import './navbar.css';
-import QuoteModal from './QuoteModal';
+// import QuoteModal from './QuoteModal';
+// import { FaAngular, FaNodeJs, FaReact, FaReacteNative, FaFlutter } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Dreamz from "../assets/Images/dreamz logo.png"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
@@ -20,10 +22,12 @@ import {
   CodeBracketSquareIcon,
   CubeTransparentIcon,
   UserGroupIcon,
-  AcademicCapIcon,
+  // AcademicCapIcon,
 
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, CursorArrowRippleIcon, PhoneIcon} from '@heroicons/react/20/solid'
+import { faAngular, faBootstrap, faHtml5, faJs, faLaravel, faNode, faOpencart, faReact, faShopify, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faCartShopping, faCircleNotch, faCodeBranch, faDatabase, faDiagramProject, faFire, faLeaf, faMobile, faServer } from '@fortawesome/free-solid-svg-icons';
 
 const services = [
   { name: 'Custom Software Development', href: '/custom software development', icon: RectangleGroupIcon },
@@ -53,6 +57,48 @@ function classNames(...classes) {
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+
+  const frontendTechnologies = [
+    // { name: 'Angular', icon: faAngular, link: '/angular' },
+    { name: 'Bootstrap', icon: faBootstrap, link: '/bootstrap' },
+    { name: 'HTML & CSS', icon: faHtml5, link: '/html' },
+    { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
+    { name: 'JavaScript', icon: faJs, link: '/javascript' },
+    { name: 'React', icon: faReact, link: '/react' },
+    { name: 'Shopify', icon: faShopify, link: '/shopify' },
+    { name: 'WordPress', icon: faWordpress, link: '/wordpress' },
+    { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
+  ];
+  
+  const backendTechnologies = [
+    { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
+    { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
+    { name: 'Laravel', icon: faLaravel, link: '/laravel' },
+    { name: 'MongoDB', icon: faLeaf, link: '/mongo' },
+    { name: 'MS SQL', icon: faDatabase, link: '/mssql' },
+    { name: 'MySQL', icon: faCodeBranch, link: '/mysql' },
+    { name: 'Node.js', icon: faNode, link: '/node' },
+    { name: 'Oracle Database', icon: faServer, link: '/oracle' },
+    { name: 'OpenCart', icon: faOpencart, link: '/opencart' },
+  ];
+  
+  const mobileTechnologies = [
+    { name: 'Angular', icon: faAngular, link: '/angular' },
+    { name: 'Flutter', icon: faMobile, link: '/flutter' },
+    // { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
+    { name: 'React Native', icon: faReact, link: '/react' },
+    // { name: 'Node.js', icon: faNode, link: '/nodejs' },
+    // { name: 'Laravel', icon: faLaravel, link: '/laravel' },
+    // { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
+    // { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
+    // { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
+  ];
+
+  const toggleMegaMenu = () => {
+    setMegaMenuOpen(!megaMenuOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -220,6 +266,10 @@ const Navbar = () => {
             Technology
           </a> */}
           
+          <button onClick={toggleMegaMenu} className="flex text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+            Technologies <ChevronDownIcon className="h-5 w-5 ms-2 flex-none text-gray-400" aria-hidden="true" />
+          </button>
+
           <a href="/career" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Career
           </a>
@@ -258,6 +308,73 @@ const Navbar = () => {
           </div>
         
       </nav>
+
+      <div className="hidden lg:block">
+  {megaMenuOpen && (
+    <div className="mega-menu bg-white w-full flex flex-row">
+      <div className="mega-menu-column flex-1 p-4">
+        <div className="flex">
+          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> {/* Adjusted width */}
+            <h3 className="mega-menu-heading text-lg font-bold mb-4">Frontend</h3>
+            <ul className="mega-menu-list grid grid-cols-3 gap-5">
+              {frontendTechnologies.map((tech, index) => (
+                <li key={index} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <FontAwesomeIcon icon={tech.icon} className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                  </div>
+                  <div className="flex-auto">
+                    <a href={tech.link} className="block font-semibold text-gray-900">
+                      {tech.name}
+                    </a>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mega-menu-subcolumn flex-2"></div> {/* 5% gap */}
+          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> {/* Adjusted width */}
+            <h3 className="mega-menu-heading text-lg font-bold mb-4">Backend</h3>
+            <ul className="mega-menu-list grid grid-cols-3 gap-5">
+              {backendTechnologies.map((tech, index) => (
+                <li key={index} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <FontAwesomeIcon icon={tech.icon} className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                  </div>
+                  <div className="flex-auto">
+                    <a href={tech.link} className="block font-semibold text-gray-900">
+                      {tech.name}
+                    </a>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mega-menu-subcolumn flex-2"></div> {/* 5% gap */}
+          <div className="mega-menu-subcolumn flex-20">
+            <h3 className="mega-menu-heading text-lg font-bold mb-4">Mobile</h3>
+            <ul className="mega-menu-list grid grid-cols-1 gap-5">
+              {mobileTechnologies.map((tech, index) => (
+                <li key={index} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <FontAwesomeIcon icon={tech.icon} className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                  </div>
+                  <div className="flex-auto">
+                    <a href={tech.link} className="block font-semibold text-gray-900">
+                      {tech.name}
+                    </a>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+</div>
+
+
+
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white navMobView sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
