@@ -58,47 +58,47 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+  // const [megaMenuOpen, setMegaMenuOpen] = useState(false);
 
-  const frontendTechnologies = [
-    // { name: 'Angular', icon: faAngular, link: '/angular' },
-    { name: 'Bootstrap', icon: faBootstrap, link: '/bootstrap' },
-    { name: 'HTML & CSS', icon: faHtml5, link: '/html' },
-    { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
-    { name: 'JavaScript', icon: faJs, link: '/javascript' },
-    { name: 'React', icon: faReact, link: '/react' },
-    { name: 'Shopify', icon: faShopify, link: '/shopify' },
-    { name: 'WordPress', icon: faWordpress, link: '/wordpress' },
-    { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
-  ];
+  // const frontendTechnologies = [
+  //   // { name: 'Angular', icon: faAngular, link: '/angular' },
+  //   { name: 'Bootstrap', icon: faBootstrap, link: '/bootstrap' },
+  //   { name: 'HTML & CSS', icon: faHtml5, link: '/html' },
+  //   { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
+  //   { name: 'JavaScript', icon: faJs, link: '/javascript' },
+  //   { name: 'React', icon: faReact, link: '/react' },
+  //   { name: 'Shopify', icon: faShopify, link: '/shopify' },
+  //   { name: 'WordPress', icon: faWordpress, link: '/wordpress' },
+  //   { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
+  // ];
   
-  const backendTechnologies = [
-    { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
-    { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
-    { name: 'Laravel', icon: faLaravel, link: '/laravel' },
-    { name: 'MongoDB', icon: faLeaf, link: '/mongo' },
-    { name: 'MS SQL', icon: faDatabase, link: '/mssql' },
-    { name: 'MySQL', icon: faCodeBranch, link: '/mysql' },
-    { name: 'Node.js', icon: faNode, link: '/node' },
-    { name: 'Oracle Database', icon: faServer, link: '/oracle' },
-    { name: 'OpenCart', icon: faOpencart, link: '/opencart' },
-  ];
+  // const backendTechnologies = [
+  //   { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
+  //   { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
+  //   { name: 'Laravel', icon: faLaravel, link: '/laravel' },
+  //   { name: 'MongoDB', icon: faLeaf, link: '/mongo' },
+  //   { name: 'MS SQL', icon: faDatabase, link: '/mssql' },
+  //   { name: 'MySQL', icon: faCodeBranch, link: '/mysql' },
+  //   { name: 'Node.js', icon: faNode, link: '/node' },
+  //   { name: 'Oracle Database', icon: faServer, link: '/oracle' },
+  //   { name: 'OpenCart', icon: faOpencart, link: '/opencart' },
+  // ];
   
-  const mobileTechnologies = [
-    { name: 'Angular', icon: faAngular, link: '/angular' },
-    { name: 'Flutter', icon: faMobile, link: '/flutter' },
-    // { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
-    { name: 'React Native', icon: faReact, link: '/react' },
-    // { name: 'Node.js', icon: faNode, link: '/nodejs' },
-    // { name: 'Laravel', icon: faLaravel, link: '/laravel' },
-    // { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
-    // { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
-    // { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
-  ];
+  // const mobileTechnologies = [
+  //   { name: 'Angular', icon: faAngular, link: '/angular' },
+  //   { name: 'Flutter', icon: faMobile, link: '/flutter' },
+  //   // { name: 'Ionic', icon: faCircleNotch, link: '/ionic' },
+  //   { name: 'React Native', icon: faReact, link: '/react' },
+  //   // { name: 'Node.js', icon: faNode, link: '/nodejs' },
+  //   // { name: 'Laravel', icon: faLaravel, link: '/laravel' },
+  //   // { name: '.NET', icon: faDiagramProject, link: '/dotnet' },
+  //   // { name: 'CodeIgniter', icon: faFire, link: '/codeigniter' },
+  //   // { name: 'WooCommerce', icon: faCartShopping, link: '/woocommerce' },
+  // ];
 
-  const toggleMegaMenu = () => {
-    setMegaMenuOpen(!megaMenuOpen);
-  };
+  // const toggleMegaMenu = () => {
+  //   setMegaMenuOpen(!megaMenuOpen);
+  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -266,9 +266,9 @@ const Navbar = () => {
             Technology
           </a> */}
           
-          <button onClick={toggleMegaMenu} className="flex text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
+          {/* {<button onClick={toggleMegaMenu} className="flex text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Technologies <ChevronDownIcon className="h-5 w-5 ms-2 flex-none text-gray-400" aria-hidden="true" />
-          </button>
+          </button>} */}
 
           <a href="/career" className="text-sm font-semibold leading-6 text-gray-900 mainHead hover:text-indigo-600">
             Career
@@ -308,13 +308,13 @@ const Navbar = () => {
           </div>
         
       </nav>
-
+{/* 
       <div className="hidden lg:block">
   {megaMenuOpen && (
     <div className="mega-menu bg-white w-full flex flex-row">
       <div className="mega-menu-column flex-1 p-4">
         <div className="flex">
-          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> {/* Adjusted width */}
+          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> 
             <h3 className="mega-menu-heading text-lg font-bold mb-4">Frontend</h3>
             <ul className="mega-menu-list grid grid-cols-3 gap-5">
               {frontendTechnologies.map((tech, index) => (
@@ -331,8 +331,8 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="mega-menu-subcolumn flex-2"></div> {/* 5% gap */}
-          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> {/* Adjusted width */}
+          <div className="mega-menu-subcolumn flex-2"></div> 
+          <div className="mega-menu-subcolumn flex-30 border-r pr-4"> 
             <h3 className="mega-menu-heading text-lg font-bold mb-4">Backend</h3>
             <ul className="mega-menu-list grid grid-cols-3 gap-5">
               {backendTechnologies.map((tech, index) => (
@@ -349,7 +349,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="mega-menu-subcolumn flex-2"></div> {/* 5% gap */}
+          <div className="mega-menu-subcolumn flex-2"></div> 
           <div className="mega-menu-subcolumn flex-20">
             <h3 className="mega-menu-heading text-lg font-bold mb-4">Mobile</h3>
             <ul className="mega-menu-list grid grid-cols-1 gap-5">
@@ -371,7 +371,7 @@ const Navbar = () => {
       </div>
     </div>
   )}
-</div>
+</div> */}
 
 
 

@@ -182,9 +182,9 @@ const ContactUs = () => {
                     <p className="text-neutral-500 ">
                       +91 99606 85666
                     </p>
-                    <p className="text-neutral-500 ">
+                    {/* <p className="text-neutral-500 ">
                       +91 2046766249
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
